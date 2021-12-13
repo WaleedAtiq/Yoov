@@ -35,9 +35,9 @@
           <router-link to="/about">About</router-link>
         </v-btn>
 
-        <v-btn text>
+        <!-- <v-btn text>
           <router-link to="/contact">Contact</router-link>
-        </v-btn>
+        </v-btn> -->
 
         <v-btn icon>
           <v-icon>mdi-heart</v-icon>

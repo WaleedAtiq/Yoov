@@ -1,0 +1,31 @@
+.position-relative {
+  position: relative;
+}
+
+.left-element {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.right-element {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.v-btn {
+  text-transform: capitalize;
+}

@@ -1,5 +1,6 @@
 <template>
-  <v-app>
+  <div>
+    <Contact />
     <v-footer class="custom-footer" color="secondary">
       <v-container>
         <v-row>
@@ -45,6 +46,9 @@
               <li>
                 <a href="callto:5169 9300">5169 9300</a>
               </li>
+              <li class="custom-icon">
+                <v-icon> mdi-whatsapp </v-icon>
+              </li>
             </ul>
             <h5>Enquiry</h5>
             <ul>
@@ -70,96 +74,107 @@
               </li>
             </ul>
             <h5>Resources</h5>
-            <a href="mailto:5169 9300">hr@yoov.com</a>
+            <ul>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Customer stories</a></li>
+              <li><a href="/">Help center</a></li>
+            </ul>
           </v-col>
           <v-col lg="3">
             <h5>Products & services</h5>
-            <v-list color="secondary">
-              <v-list-item-group>
-                <v-list-item class="pa-0" v-for="(item, i) in items3" :key="i">
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      <a v-bind:href="item.link" v-text="item.text"></a>
-                    </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
+            <ul>
+              <li><a href="/">YOOV+</a></li>
+              <li><a href="/">YOOV WORK</a></li>
+              <li><a href="/">YOOV EAT</a></li>
+              <li><a href="/">YOOV Domain</a></li>
+              <li><a href="/">YOOV Email</a></li>
+              <li><a href="/">YOOV Capital</a></li>
+              <li><a href="/">YOOV Insurance</a></li>
+            </ul>
           </v-col>
           <v-col lg="3">
-            <v-list color="secondary">
-              <h5>Other services</h5>
-              <v-list-item-group>
-                <v-list-item class="pa-0" v-for="(item, i) in items4" :key="i">
-                  <v-list-item-content>
-                    <v-list-item-title>
-                      <a v-bind:href="item.link" v-text="item.text"></a>
-                    </v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
+            <h5>Other services</h5>
+            <ul>
+              <li><a href="/">TalkFood</a></li>
+              <li><a href="/">BYOBmall</a></li>
+            </ul>
           </v-col>
         </v-row>
-        <v-row
-          class="py-2 white--text text-center justify-space-between align-center"
-        >
-          <v-col class="d-flex justify-space-between align-center">
-            <strong>
-              ©{{ new Date().getFullYear() }} — YOOV Internet Technology (HK)
-              Limited</strong
-            >
-            <div>
-              <v-btn
-                v-for="link in links"
-                :key="link"
-                color="white"
-                text
-                rounded
-                class="my-2"
+        <div class="footer-bottom">
+          <v-row
+            class="py-2 white--text text-center justify-space-between align-center"
+          >
+            <v-col class="d-flex justify-space-between align-center">
+              <span>
+                ©{{ new Date().getFullYear() }} — YOOV Internet Technology (HK)
+                Limited</span
               >
-                {{ link }}
-              </v-btn>
-            </div>
-          </v-col>
-        </v-row>
+              <div>
+                <v-btn
+                  v-for="link in links"
+                  :key="link"
+                  color="white"
+                  text
+                  rounded
+                  class="my-2"
+                >
+                  {{ link }}
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
+        </div>
       </v-container>
     </v-footer>
-  </v-app>
+  </div>
 </template>
-
 <script>
+import Contact from "../ContactComponent.vue";
 export default {
+  components: { Contact },
   data: () => ({
     icons: ["mdi-facebook", "mdi-linkedin", "mdi-instagram"],
     links: ["EN", "Privacy Policy", "Terms & Condition"],
-    items2: [
-      { text: "About us", link: "/" },
-      { text: "Join us", link: "/" },
-      { text: "Resources", link: "/" },
-      { text: "Blog", link: "/" },
-      { text: "Customer stories", link: "/" },
-      { text: "Help center", link: "/" },
-    ],
-    items3: [
-      { text: "YOOV+", link: "/" },
-      { text: "YOOV WORK", link: "/" },
-      { text: "YOOV EAT", link: "/" },
-      { text: "YOOV Domain", link: "/" },
-      { text: "YOOV Email", link: "/" },
-      { text: "YOOV Capital", link: "/" },
-      { text: "YOOV Insurance", link: "/" },
-    ],
-    items4: [
-      { text: "TalkFood", link: "/" },
-      { text: "BYOBmall", link: "/" },
-    ],
   }),
 };
 </script>
 
 <style scoped>
+.footer-bottom {
+  border-top: 1px solid #436280;
+}
+.custom-footer {
+  padding-top: 40px;
+}
+.custom-footer ul li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.custom-footer ul li:last-child {
+  margin-bottom: 25px;
+}
+.custom-footer h5 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+.custom-footer {
+  font-family: "Prompt", sans-serif;
+}
+.custom-footer ul {
+  list-style: none;
+  padding: 0;
+}
 a {
   text-decoration: none;
+}
+.custom-icon {
+  width: 40px;
+  height: 40px;
+  background: #5ec2d0;
+  border-radius: 99px;
+  line-height: 40px;
+  text-align: center;
 }
 </style>
