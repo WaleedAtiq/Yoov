@@ -13,6 +13,7 @@ const vuetify = new Vuetify({
                 secondary: '#294460',
                 secondarysix: "#5EC2D0",
                 anchor: '#fff',
+                whiteTheme: "#fff"
             },
         },
     },

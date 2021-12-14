@@ -1,9 +1,48 @@
 * {
   font-family: "Prompt", sans-serif;
 }
-
+.fs-12 {
+  font-size: 12px;
+}
 .position-relative {
   position: relative;
+}
+
+.secondary-clr {
+  color: #acebec !important;
+}
+
+.transparent-btn {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: transparent !important;
+}
+
+.hero-banner {
+  background: linear-gradient(
+    180deg,
+    #294460 0%,
+    #294561 6.67%,
+    #2b4864 13.33%,
+    #2d4e69 20%,
+    #315771 26.67%,
+    #35617a 33.33%,
+    #3b6e85 40%,
+    #407c92 46.67%,
+    #478a9e 53.33%,
+    #4c98ab 60%,
+    #52a5b6 66.67%,
+    #56afbf 73.33%,
+    #5ab8c7 80%,
+    #5cbecc 86.67%,
+    #5ec1cf 93.33%,
+    #5ec2d0 100%
+  );
+}
+
+.main-heading {
+  font-size: 60px;
 }
 
 .left-element {

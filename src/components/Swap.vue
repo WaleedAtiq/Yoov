@@ -1,9 +1,9 @@
 <template>
-  <div class="home-component">
+  <div class="home-component pt-16">
     <v-container v-if="swap">
       <v-row class="align-center">
         <v-col lg="5">
-          <div class="position-relative main-heading">
+          <div class="position-relative sub-heading">
             <svg
               width="24"
               height="24"
@@ -43,7 +43,7 @@
           ></v-img>
         </v-col>
         <v-col lg="5">
-          <div class="position-relative main-heading">
+          <div class="position-relative sub-heading">
             <svg
               width="24"
               height="24"
@@ -80,13 +80,13 @@ export default {
 </script>
 
 <style scoped>
-.main-heading svg {
+.sub-heading svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.main-heading h2 {
+.sub-heading h2 {
   position: relative;
 }
 </style>

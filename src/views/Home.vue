@@ -1,5 +1,39 @@
 <template>
   <div>
+    <div class="hero-banner white--text pa-16 pb-0 text-center">
+      <v-container class="pt-16">
+        <v-row>
+          <v-col class="pb-0 position-relative">
+            <img src="../assets/images/element3.png" class="element1" alt="" />
+            <img src="../assets/images/union1.png" class="element2" alt="" />
+            <h1 class="main-heading">One platform, beyond one value</h1>
+            <h2>
+              Optimize your
+              <a class="secondary-clr text-decoration-underline">
+                HR management
+              </a>
+              now.
+            </h2>
+            <div class="ma-5">
+              <v-btn class="text-transform-none" color="secondarysix" dark>
+                Book a demo
+              </v-btn>
+              <v-btn
+                class="text-transform-none transparent-btn white--text ms-5"
+              >
+                Contact our team
+              </v-btn>
+            </div>
+            <v-img
+              lazy-src="../assets/images/dashboard.png"
+              max-height="100%"
+              max-width="100%"
+              src="../assets/images/dashboard.png"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
     <div class="digital pa-12">
       <v-container>
         <v-row>
@@ -369,6 +403,60 @@
         </v-row>
       </v-container>
     </div>
+    <div class="stories pa-16">
+      <v-container>
+        <v-row>
+          <v-col>
+            <h1 class="text-center">Best stories from our clients</h1>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <VueSlickCarousel arrows="true" dots="true" v-bind="settings">
+              <div>
+                <div class="story-slider position-relative pa-16 mx-4">
+                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
+                  <p>
+                    Our monthly payroll computation is complicated and a waste
+                    of time. YOOV WORK is beyond our expectations! It can
+                    minimize the administrative workload, reduce time-wasting
+                    and human resources utilization!
+                  </p>
+                  <span>Chief Superintendent of HR Department</span>
+                  <h5>Ms.Yung</h5>
+                </div>
+              </div>
+              <div>
+                <div class="story-slider position-relative pa-16 mx-4">
+                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
+                  <p>
+                    Our monthly payroll computation is complicated and a waste
+                    of time. YOOV WORK is beyond our expectations! It can
+                    minimize the administrative workload, reduce time-wasting
+                    and human resources utilization!
+                  </p>
+                  <span>Chief Superintendent of HR Department</span>
+                  <h5>Ms.Yung</h5>
+                </div>
+              </div>
+              <div>
+                <div class="story-slider position-relative pa-16 mx-4">
+                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
+                  <p>
+                    Our monthly payroll computation is complicated and a waste
+                    of time. YOOV WORK is beyond our expectations! It can
+                    minimize the administrative workload, reduce time-wasting
+                    and human resources utilization!
+                  </p>
+                  <span>Chief Superintendent of HR Department</span>
+                  <h5>Ms.Yung</h5>
+                </div>
+              </div>
+            </VueSlickCarousel>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
     <Swap
       v-bind:imagePath="home2"
       heading="Achieve corporate centralized management"
@@ -434,8 +522,12 @@ import home1 from "../assets/images/home1.png";
 import home2 from "../assets/images/home2.png";
 import home3 from "../assets/images/home3.png";
 import home4 from "../assets/images/home4.png";
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// optional style for arrows & dots
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-  components: { Swap },
+  components: { Swap, VueSlickCarousel },
   data: function () {
     return {
       home1: home1,
@@ -443,12 +535,31 @@ export default {
       home3: home3,
       home4: home4,
       tab: null,
+      settings: {
+        centerMode: true,
+        centerPadding: "60px",
+        infinite: true,
+        slidesToShow: 2,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        pauseOnDotsHover: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+      },
     };
   },
 };
 </script>
 
 <style scoped>
+.story-slider:before {
+  content: url("../assets/images/union.png");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .solution-box:after {
   font-family: "Material Icons";
   content: "\e5cc";
@@ -469,8 +580,13 @@ export default {
   margin-bottom: -150px;
 }
 .partners,
-.digital {
+.digital,
+.stories {
   background: #f7f8fa;
+}
+.story-slider {
+  background: #ffffff;
+  border-radius: 8px;
 }
 .solution {
   background: #5ec2d0;
@@ -480,5 +596,18 @@ export default {
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
     0px 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 99px;
+}
+
+.element1 {
+  position: absolute;
+  left: -3%;
+  top: 20%;
+  transform: translateY(-50%);
+}
+.element2 {
+  position: absolute;
+  right: -3%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 </style>
