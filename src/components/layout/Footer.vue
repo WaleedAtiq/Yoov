@@ -159,9 +159,9 @@ export default {
   color: #fff;
   font-weight: 500;
 }
-.custom-footer {
+/* .custom-footer {
   font-family: "Prompt", sans-serif;
-}
+} */
 .custom-footer ul {
   list-style: none;
   padding: 0;

@@ -25,7 +25,6 @@
         </v-col>
         <v-col lg="7">
           <v-img
-            v-bind:lazy-src="imagePath"
             max-height="100%"
             max-width="100%"
             v-bind:src="imagePath"
