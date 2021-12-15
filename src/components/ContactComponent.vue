@@ -32,4 +32,15 @@
 .contact-component h1 {
   font-weight: 600;
 }
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 </style>

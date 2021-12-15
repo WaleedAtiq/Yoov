@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import About from '../views/About'
 import Layout from '../components/layout/index'
+import LayoutTwo from '../components/layoutTwo/index'
 import '../assets/style.css'
 
 Vue.use(VueRouter)
@@ -17,14 +18,20 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home
-      },
+      }
+    ]
+  },
+  {
+    path: '/',
+    name: '',
+    component: LayoutTwo,
+    children: [
       {
         path: '/about',
         name: 'About',
         component: About
       }
     ]
-
   },
   // {
   //   path: '/layout',

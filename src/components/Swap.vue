@@ -56,7 +56,6 @@
                 fill="#5EC2D0"
               />
             </svg>
-
             <h2>{{ heading }}</h2>
           </div>
           <p>
