@@ -71,3 +71,28 @@
 .v-tabs-slider-wrapper {
   display: none !important;
 }
+
+.custom-header-two.v-app-bar.v-toolbar.v-sheet {
+  background-color: #fff;
+}
+
+.custom-header.v-app-bar.v-toolbar.v-sheet {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 1366px) {
+  .custom-header-two {
+    height: 60px !important;
+  }
+
+  .custom-header-two .v-btn,
+  .custom-header-two a,
+  .custom-header .v-btn,
+  .custom-header a {
+    padding: 0 7px !important;
+  }
+  .custom-header-two .v-toolbar__content {
+    height: 40px !important;
+  }
+}

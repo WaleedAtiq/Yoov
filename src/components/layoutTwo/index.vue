@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-app>
     <Header />
     <router-view />
     <Footer />
-  </div>
+  </v-app>
 </template>
 <script>
 import Header from "./Header.vue";
