@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import About from '../views/About'
+import Blog from '../views/Blog'
+import BlogDetail from '../views/BlogDetail'
+import OpenPlatform from '../views/OpenPlatform'
 import Layout from '../components/layout/index'
 import LayoutTwo from '../components/layoutTwo/index'
 import '../assets/style.css'
@@ -30,6 +33,22 @@ const routes = [
         path: '/about',
         name: 'About',
         component: About
+      },
+      {
+        path: '/openplatform',
+        name: 'OpenPlatform',
+        component: OpenPlatform
+      }
+      ,
+      {
+        path: '/blog',
+        name: 'Blog',
+        component: Blog
+      },
+      {
+        path: '/blogdetail',
+        name: 'BlogDetail',
+        component: BlogDetail
       }
     ]
   },

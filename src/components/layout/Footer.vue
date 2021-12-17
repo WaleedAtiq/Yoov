@@ -67,7 +67,9 @@
             <h5>Company</h5>
             <ul>
               <li>
-                <a href="/">About us</a>
+                <router-link class="text-decoration-none" to="/about"
+                  >About us</router-link
+                >
               </li>
               <li>
                 <a href="/">Join us</a>

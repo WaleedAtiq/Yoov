@@ -1,5 +1,5 @@
 <template>
-  <div class="position-relative sub-heading">
+  <div class="position-relative d-inline-block sub-heading">
     <svg
       width="24"
       height="24"
@@ -29,5 +29,6 @@ export default {
 
 .sub-heading h2 {
   position: relative;
+  font-size: 32px;
 }
 </style>
