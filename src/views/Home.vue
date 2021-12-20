@@ -34,7 +34,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="digital pa-12">
+    <div class="grey2 pa-12">
       <v-container>
         <v-row>
           <v-col>
@@ -375,7 +375,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="stories pa-16">
+    <div class="grey2 pa-16">
       <v-container>
         <v-row>
           <v-col>
@@ -445,7 +445,7 @@
       heading="Manage with digital business model"
       detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
     />
-    <div class="partners pa-16 position-relative mb-16">
+    <div class="grey2 pa-16 position-relative mb-16">
       <v-container>
         <v-row>
           <v-col cols="24" class="text-center text-center">
@@ -560,11 +560,6 @@ export default {
 }
 .grey-box {
   margin-bottom: -150px;
-}
-.partners,
-.digital,
-.stories {
-  background: #f7f8fa;
 }
 .story-slider {
   background: #ffffff;

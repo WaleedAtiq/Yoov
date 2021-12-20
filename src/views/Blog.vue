@@ -46,35 +46,35 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "",
+          link: "/blogdetail",
           blogImg: "",
           title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "",
+          link: "/blogdetail",
           blogImg: "",
           title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "",
+          link: "/blogdetail",
           blogImg: "",
           title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "",
+          link: "/blogdetail",
           blogImg: "",
           title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "",
+          link: "/blogdetail",
           blogImg: "",
           title: "Blog title",
           detail:

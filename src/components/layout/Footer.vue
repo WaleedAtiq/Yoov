@@ -113,14 +113,16 @@
               >
               <div>
                 <v-btn
-                  v-for="link in links"
-                  :key="link"
+                  v-for="item in links"
+                  :key="item"
                   color="white"
                   text
                   rounded
                   class="my-2"
                 >
-                  {{ link }}
+                  <router-link v-bind:to="item.link">
+                    {{ item.title }}
+                  </router-link>
                 </v-btn>
               </div>
             </v-col>
@@ -136,7 +138,11 @@ export default {
   components: { Contact },
   data: () => ({
     icons: ["mdi-facebook", "mdi-linkedin", "mdi-instagram"],
-    links: ["EN", "Privacy Policy", "Terms & Condition"],
+    links: [
+      { title: "EN", link: "" },
+      { title: "Privacy Policy", link: "/privacypolicy" },
+      { title: "Terms & Condition", link: "" },
+    ],
   }),
 };
 </script>

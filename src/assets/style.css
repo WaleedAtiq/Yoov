@@ -12,6 +12,10 @@
   color: #acebec !important;
 }
 
+.grey2 {
+  background-color: #f7f8fa;
+}
+
 .transparent-btn {
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -74,6 +78,11 @@
 
 .custom-header-two.v-app-bar.v-toolbar.v-sheet {
   background-color: #fff;
+  box-shadow: none;
+}
+
+.v-card.v-sheet.theme--light {
+  box-shadow: none;
 }
 
 .custom-header.v-app-bar.v-toolbar.v-sheet {

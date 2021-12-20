@@ -39,7 +39,7 @@
       </v-container>
       <img src="../assets/images/union3.png" class="right" alt="" />
     </section>
-    <section class="about-detail pa-16">
+    <section class="grey2 pa-16">
       <v-container>
         <v-row>
           <v-col lg="6">
@@ -145,7 +145,7 @@
         </v-row>
       </v-container>
     </section>
-    <section class="contact-box pa-16">
+    <section class="grey2 pa-16">
       <v-container>
         <v-row>
           <v-col lg="4">
@@ -237,10 +237,7 @@ export default {
   left: 0;
   top: 80px;
 }
-.about-detail,
-.contact-box {
-  background: #f7f8fa;
-}
+
 .card {
   background: #ffffff;
   border-radius: 8px;

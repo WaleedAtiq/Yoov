@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="banner"></section>
-    <section class="clients pa-16">
+    <section class="clients grey2 pa-16">
       <v-container>
         <v-row class="justify-center mb-16">
           <v-col class="text-center">
@@ -116,10 +116,6 @@ export default {
 </script>
 
 <style scoped>
-.clients {
-  background-color: #f7f8fa;
-}
-
 .clients h3 {
   color: #294460;
 }

@@ -4,6 +4,7 @@ import Home from '../views/Home'
 import About from '../views/About'
 import Blog from '../views/Blog'
 import BlogDetail from '../views/BlogDetail'
+import PrivacyPolicy from '../views/PrivacyPolicy'
 import OpenPlatform from '../views/OpenPlatform'
 import Layout from '../components/layout/index'
 import LayoutTwo from '../components/layoutTwo/index'
@@ -49,6 +50,11 @@ const routes = [
         path: '/blogdetail',
         name: 'BlogDetail',
         component: BlogDetail
+      },
+      {
+        path: '/privacypolicy',
+        name: 'PrivacyPolicy',
+        component: PrivacyPolicy
       }
     ]
   },
