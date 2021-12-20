@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Contact />
     <v-footer class="custom-footer" color="secondary">
       <v-container>
         <v-row>
@@ -133,9 +132,8 @@
   </div>
 </template>
 <script>
-import Contact from "../ContactComponent.vue";
 export default {
-  components: { Contact },
+  components: {},
   data: () => ({
     icons: ["mdi-facebook", "mdi-linkedin", "mdi-instagram"],
     links: [

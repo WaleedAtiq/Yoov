@@ -486,9 +486,11 @@
         </v-row>
       </v-container>
     </div>
+    <Contact />
   </div>
 </template>
 <script>
+import Contact from "../components/ContactComponent.vue";
 import Swap from "../components/Swap.vue";
 import home1 from "../assets/images/home1.png";
 import home2 from "../assets/images/home2.png";
@@ -499,7 +501,7 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-  components: { Swap, VueSlickCarousel },
+  components: { Swap, Contact, VueSlickCarousel },
   data: function () {
     return {
       home1: home1,

@@ -4,7 +4,7 @@
       <v-container>
         <v-row class="justify-center">
           <v-col lg="8">
-            <div class="text-box pa-10">
+            <div class="text-box my-10 pa-14">
               <h1 class="text-h4 font-weight-medium">Privacy Policy</h1>
               <p class="grey--text">
                 This policy sets out the basis on which YOOV Internet Technology
@@ -22,21 +22,21 @@
                 you accept and consent to the practices set out below.
               </p>
 
-              <ul>
+              <ol class="grey--text">
                 <li>
                   Collection of information
-                  <ul>
+                  <ul class="point-child">
                     <li>
-                      For the purposes outlined in Clause 2, we may collect and
-                      process the following information about you:
-                      <ul>
+                      1.1 For the purposes outlined in Clause 2, we may collect
+                      and process the following information about you:
+                      <ul class="alpha-child">
                         <li>
                           Information provided to us, e.g. your name, address,
                           email address, telephone number, credit card
                           information and other personal description, by filling
                           in forms on our Site or our App, or by corresponding
                           with us, for example:
-                          <ul>
+                          <ul class="roman-child">
                             <li>when you register an account with us;</li>
                             <li>when you report any problem to us;</li>
                             <li>
@@ -81,20 +81,20 @@
                       </ul>
                     </li>
                     <li>
-                      We shall retain the said information and data for so long
-                      as the laws permit. Data may be archived as long as the
-                      purpose for which the data as stated in clause 2
+                      1.2 We shall retain the said information and data for so
+                      long as the laws permit. Data may be archived as long as
+                      the purpose for which the data as stated in clause 2
                       hereinbelow remains effective subsisting.
                     </li>
                   </ul>
                 </li>
                 <li>
                   Uses made of the information
-                  <ul>
+                  <ul class="point-child">
                     <li>
-                      We use information held about you for the following
+                      2.1 We use information held about you for the following
                       purposes:
-                      <ul>
+                      <ul class="alpha-child">
                         <li>
                           providing, improving and developing our services;
                         </li>
@@ -134,11 +134,11 @@
                       </ul>
                     </li>
                     <li>
-                      We may use your personal data for direct marketing
+                      2.2 We may use your personal data for direct marketing
                       purpose. We require your consent specifically for this
                       purpose and you may opt out any time. For the purpose of
                       this clause:
-                      <ul>
+                      <ul class="alpha-child">
                         <li>
                           the personal data that may be used in direct marketing
                           are those that you provide to us or we collect from
@@ -165,11 +165,37 @@
                 </li>
                 <li>
                   Disclosure of your information
-                  <ul>
-                    <li></li>
+                  <h6 class="text-subtitle-1">
+                    We will keep your personal data we hold confidential but you
+                    agree we may provide information to:
+                  </h6>
+                  <ul class="alpha-child">
+                    <li>
+                      any member of our group, which means our subsidiaries, our
+                      ultimate holding company and its subsidiaries;
+                    </li>
+                    <li>
+                      personnel, agents, advisers, auditors, contractors,
+                      financial institutions, and service providers in
+                      connection with our operations or services[Don’t think it
+                      is good idea to state too much examples herein.];
+                    </li>
+                    <li>
+                      our overseas offices, affiliates, business partners and
+                      counterparts (on a need-to-know basis only);
+                    </li>
+                    <li>
+                      persons to whom we are required to make disclosure under
+                      applicable laws and regulations in or outside of Hong
+                      Kong; or
+                    </li>
+                    <li>
+                      actual or proposed transferees of our operations (or a
+                      substantial part thereof) in or outside of Hong Kong.
+                    </li>
                   </ul>
                 </li>
-              </ul>
+              </ol>
             </div>
           </v-col>
         </v-row>
@@ -177,3 +203,28 @@
     </section>
   </main>
 </template>
+<style scoped>
+.text-box {
+  background: #ffffff;
+
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+.point-child li {
+  list-style: none;
+}
+.alpha-child li {
+  list-style: lower-alpha;
+}
+.alpha-child li:before {
+  display: none !important;
+}
+ol,
+ul {
+  padding: 0 !important;
+}
+.roman-child li {
+  list-style: lower-roman;
+}
+</style>
