@@ -74,7 +74,7 @@
               >
             </div>
           </v-col>
-          <v-col lg="4" md="4" class="text-end">
+          <v-col lg="4" md="4" class="text-end hide-below-480">
             <v-btn text class="hidden-sm-and-down"
               ><router-link class="text-decoration-none" to="/"
                 >Contact us</router-link

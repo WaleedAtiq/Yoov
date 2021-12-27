@@ -4,10 +4,8 @@
       <v-container class="pt-16">
         <v-row>
           <v-col class="pb-0 position-relative">
-            <div class="show-desktop-img">
-              <img src="../assets/images/element3.png" class="element1" alt="" />
-              <img src="../assets/images/union1.png" class="element2" alt="" /> 
-            </div>
+            <img src="../assets/images/element3.png" class="element1" alt="" />
+            <img src="../assets/images/union1.png" class="element2" alt="" />
             <h1 class="main-heading">One platform, beyond one value</h1>
             <h2>
               Optimize your
@@ -16,7 +14,7 @@
               </a>
               now.
             </h2>
-            <div class="ma-5 header-btns">
+            <div class="ma-5">
               <v-btn class="text-transform-none" color="secondarysix" dark>
                 Book a demo
               </v-btn>
@@ -26,31 +24,25 @@
                 Contact our team
               </v-btn>
             </div>
-            <div class="position-relative">
-            <div class="show-tab-img">
-              <img src="../assets/images/element3.png" class="element1" alt="" />
-              <img src="../assets/images/union1.png" class="element2" alt="" />
-            </div>
             <v-img
               lazy-src="../assets/images/dashboard.png"
               max-height="100%"
               max-width="100%"
               src="../assets/images/dashboard.png"
             ></v-img>
-            </div>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="grey2 pa-12 all-sols">
+    <div class="grey2 pa-12">
       <v-container>
         <v-row>
           <v-col>
             <h1 class="text-center">All-in-one digital solutions</h1></v-col
           >
         </v-row>
-        <v-row class="all-cols-row">
-          <v-col lg="4" md="4" sm="6">
+        <v-row>
+          <v-col lg="4" md="4">
             <div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -77,7 +69,7 @@
               <span>Workflow approval</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -115,7 +107,7 @@
               <span>Attendance management</span>
             </div></v-col
           >
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -139,7 +131,7 @@
               <span>Scheduling management</span>
             </div></v-col
           >
-          <v-col lg="4" md="4" sm="6">
+          <v-col lg="4" md="4">
             <div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -168,7 +160,7 @@
               <span>Salary calculation</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -190,7 +182,7 @@
               <span>Leave management</span>
             </div></v-col
           >
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -211,7 +203,7 @@
               <span>No-code development</span>
             </div></v-col
           >
-          <v-col lg="4" md="4" sm="6">
+          <v-col lg="4" md="4">
             <div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -238,7 +230,7 @@
               <span>CRM</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -259,7 +251,7 @@
               <span>Inventory management</span>
             </div></v-col
           >
-          <v-col lg="4" md="4" sm="6"
+          <v-col lg="4" md="4"
             ><div
               class="solution-box d-flex align-center position-relative pa-4"
             >
@@ -317,7 +309,7 @@
       <v-container>
         <v-row>
           <v-col cols="24">
-            <h1 class="text-center mt40">
+            <h1 class="text-center">
               We help different industries to gain advantages
             </h1>
             <v-tabs
@@ -383,7 +375,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="grey2 testimonials pa-16">
+    <div class="grey2 pa-16">
       <v-container>
         <v-row>
           <v-col>
@@ -453,10 +445,10 @@
       heading="Manage with digital business model"
       detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
     />
-    <div class="grey2 pa-16 position-relative mb-16 clients-section">
+    <div class="grey2 pa-16 position-relative mb-16">
       <v-container>
         <v-row>
-          <v-col cols="12" class="text-center">
+          <v-col cols="24" class="text-center text-center">
             <h1 class="mb-8">
               Trusted by 6000+ corporate clients from different industries
             </h1>
@@ -466,24 +458,14 @@
               max-height="100%"
               max-width="100%"
               src="../assets/images/clients.png"
-              class="clients-desktop"
             ></v-img>
-            <v-img
-              contain
-              lazy-src="../assets/images/clients.png"
-              max-height="100%"
-              max-width="100%"
-              src="../assets/images/clients-mobile.png"
-              class="clients-mobile"
-            ></v-img>
-            <div class="grey-box d-flex d-sm-block client-bottom">
+            <div class="grey-box d-flex">
               <v-img
                 contain
                 lazy-src="../assets/images/about1.png"
                 max-height="100%"
                 max-width="100%"
                 src="../assets/images/about1.png"
-                class="clients-bottom-img"
               ></v-img>
               <v-img
                 contain
@@ -491,7 +473,6 @@
                 max-height="100%"
                 max-width="100%"
                 src="../assets/images/about2.png"
-                class="clients-bottom-img"
               ></v-img>
               <v-img
                 contain
@@ -499,7 +480,6 @@
                 max-height="100%"
                 max-width="100%"
                 src="../assets/images/about3.png"
-                class="clients-bottom-img"
               ></v-img>
             </div>
           </v-col>
@@ -540,18 +520,6 @@ export default {
         pauseOnDotsHover: true,
         pauseOnFocus: true,
         pauseOnHover: true,
-        responsive: [
-          {
-            breakpoint: 769,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: "20px",
-              slidesToScroll: 1,
-              infinite: true,
-              
-            }
-          },
-        ]
       },
     };
   },
@@ -622,27 +590,5 @@ export default {
   right: -3%;
   top: 50%;
   transform: translateY(-50%);
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-  .element1{
-    left:-12%;
-    top:0;
-  }
-  .element2{
-    right:-12%;
-    top:-50px;
-    transform:none;
-  }
-}
-@media screen and  (max-width:767px){
-  .element1{
-    left:-12%;
-    top:0;
-  }
-  .element2{
-    right:-12%;
-    top:-50px;
-    transform:none;
-  }
 }
 </style>

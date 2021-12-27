@@ -2,7 +2,7 @@
   <div class="home-component pt-16">
     <v-container v-if="swap">
       <v-row class="align-center">
-        <v-col lg="5">
+        <v-col lg="5" md="5">
           <div class="position-relative sub-heading">
             <svg
               width="24"
@@ -23,7 +23,7 @@
             {{ detail }}
           </p>
         </v-col>
-        <v-col lg="7">
+        <v-col lg="7" md="7">
           <v-img
             max-height="100%"
             max-width="100%"
@@ -33,8 +33,8 @@
       </v-row>
     </v-container>
     <v-container v-else>
-      <v-row class="align-center">
-        <v-col lg="7">
+      <v-row class="align-center flex-sm-column-reverse reverse-swap-respo">
+        <v-col lg="7" md="7">
           <v-img
             v-bind:lazy-src="imagePath"
             max-height="100%"
@@ -42,7 +42,7 @@
             v-bind:src="imagePath"
           ></v-img>
         </v-col>
-        <v-col lg="5">
+        <v-col lg="5" md="5">
           <div class="position-relative sub-heading">
             <svg
               width="24"

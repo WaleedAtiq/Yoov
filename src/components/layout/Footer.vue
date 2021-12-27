@@ -38,8 +38,8 @@
             </v-btn>
           </v-col>
         </v-row>
-        <v-row class="text-start">
-          <v-col lg="3">
+        <v-row class="text-start footer-widget">
+          <v-col lg="3" class="footer-widget-col">
             <h5>Contact us</h5>
             <ul>
               <li>
@@ -62,7 +62,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col lg="3">
+          <v-col lg="3" class="footer-widget-col">
             <h5>Company</h5>
             <ul>
               <li>
@@ -81,7 +81,7 @@
               <li><a href="/">Help center</a></li>
             </ul>
           </v-col>
-          <v-col lg="3">
+          <v-col lg="3" class="footer-widget-col">
             <h5>Products & services</h5>
             <ul>
               <li><a href="/">YOOV+</a></li>
@@ -93,7 +93,7 @@
               <li><a href="/">YOOV Insurance</a></li>
             </ul>
           </v-col>
-          <v-col lg="3">
+          <v-col lg="3" class="d-none d-md-block footer-widget-col">
             <h5>Other services</h5>
             <ul>
               <li><a href="/">TalkFood</a></li>
@@ -105,19 +105,19 @@
           <v-row
             class="py-2 white--text text-center justify-space-between align-center"
           >
-            <v-col class="d-flex justify-space-between align-center">
+            <v-col class="d-flex justify-space-between align-center footer-copyright d-md-flex d-sm-block">
               <span>
                 ©{{ new Date().getFullYear() }} — YOOV Internet Technology (HK)
                 Limited</span
               >
-              <div>
+              <div class="footer-links-no-pad">
                 <v-btn
                   v-for="item in links"
                   :key="item"
                   color="white"
                   text
                   rounded
-                  class="my-2"
+                  class="my-2 no-pad-sm"
                 >
                   <router-link v-bind:to="item.link">
                     {{ item.title }}
@@ -183,4 +183,10 @@ a {
   line-height: 40px;
   text-align: center;
 }
+.footer-links-no-pad .no-pad-sm{
+  padding-left:0;
+  padding-right:0;
+  min-width:40px;
+}
+
 </style>
