@@ -4,15 +4,13 @@
       <div class="container">
         <v-row>
           <v-col sm="12" class="pa-0">
-            <h1 class="main-heading">One platform, beyond one value</h1>
+            <h1 class="main-heading">{{ $t("home.hero-title") }}</h1>
             <h2 class="">
-              Optimize your
-              <a href="#" class="secondary-clr">HR management</a>
-              now.
+              {{ $t("home.hero-subtitle-1") }}
             </h2>
             <div class="main-btns">
-              <v-btn color="secondary">Book a demo</v-btn>
-              <v-btn class="transparent-btn">Contact our team</v-btn>
+              <v-btn color="secondary">{{ $t("home.hero-cta-1") }}</v-btn>
+              <v-btn class="transparent-btn">{{ $t("home.hero-cta-2") }}</v-btn>
             </div>
             <div class="position-relative main-img">
               <v-img src="../assets/images/dashboard.png"></v-img>
@@ -421,7 +419,16 @@
         </v-row>
         <v-row class="client-img">
           <v-col>
-            <v-img src="../assets/images/clients.png" alt="" />
+            <v-img
+              class="clients-desktop"
+              src="../assets/images/clients.png"
+              alt=""
+            />
+            <v-img
+              class="clients-mobile"
+              src="../assets/images/clients-mobile.png"
+              alt=""
+            />
           </v-col>
         </v-row>
         <div class="awards">
@@ -507,7 +514,7 @@ export default {
             },
           },
           {
-            breakpoint: 769,
+            breakpoint: 480,
             settings: {
               slidesToShow: 1,
               centerPadding: "20px",

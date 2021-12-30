@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "products": "產品",
+        "customer-stories": "客戶案例",
+        "blog": "網誌",
+        "about": "關於我們",
+        "contact": "聯絡我們",
+        "signup": "註冊",
+        "login": "登入",
+        "logout": "登出",
+        "en": "EN",
+        "tc": "繁體"
+    },
+    "home": {
+        "hero-title": "一個平台，帶來無限優勢",
+        "hero-subtitle-1": "帶來人力資源管理的優勢",
+        "hero-subtitle-2": "帶來餐飲 POS 系統的優勢",
+        "hero-subtitle-3": "帶來無代碼系統開發的優勢",
+        "hero-subtitle-4": "帶來客戶管理的優勢",
+        "hero-subtitle-5": "帶來倉存管理的優勢",
+        "hero-cta-1": "預約示範",
+        "hero-cta-2": "聯絡我們"
+    }
+}

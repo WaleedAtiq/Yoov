@@ -1,18 +1,18 @@
 <template>
   <div>
-    <!-- <Header /> -->
+    <Header />
     <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-// import Header from "./Header.vue";
+import Header from "./Header.vue";
 import Footer from "./Footer.vue";
 
 export default {
   components: {
-    // Header,
+    Header,
     Footer,
   },
   mounted() {},

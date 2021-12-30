@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "products": "Products",
+        "customer-stories": "Customer stories",
+        "blog": "Blog",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "signup": "Sign Up",
+        "login": "Log In",
+        "logout": "Log Out",
+        "en": "EN",
+        "tc": "TC"
+    },
+    "home": {
+        "hero-title": "One platform, beyond one value",
+        "hero-subtitle-1": "Optimize your HR management now",
+        "hero-subtitle-2": "Optimize your catering POS system now",
+        "hero-subtitle-3": "Optimize your system development now",
+        "hero-subtitle-4": "Optimize your CRM now",
+        "hero-subtitle-5": "Optimize your inventory management now",
+        "hero-cta-1": "Book a demo",
+        "hero-cta-2": "Contact Us"
+    }
+}
