@@ -1,59 +1,38 @@
 <template>
   <div>
-    <div class="hero-banner white--text pa-16 pb-0 text-center">
-      <v-container class="pt-16">
+    <div class="hero-banner white--text text-center">
+      <div class="container">
         <v-row>
-          <v-col class="pb-0 position-relative">
-            <div class="show-desktop-img">
-              <img src="../assets/images/element3.png" class="element1" alt="" />
-              <img src="../assets/images/union1.png" class="element2" alt="" /> 
-            </div>
+          <v-col sm="12" class="pa-0">
             <h1 class="main-heading">One platform, beyond one value</h1>
-            <h2>
+            <h2 class="">
               Optimize your
-              <a class="secondary-clr text-decoration-underline">
-                HR management
-              </a>
+              <a href="#" class="secondary-clr">HR management</a>
               now.
             </h2>
-            <div class="ma-5 header-btns">
-              <v-btn class="text-transform-none" color="secondarysix" dark>
-                Book a demo
-              </v-btn>
-              <v-btn
-                class="text-transform-none transparent-btn white--text ms-5"
-              >
-                Contact our team
-              </v-btn>
+            <div class="main-btns">
+              <v-btn color="secondary">Book a demo</v-btn>
+              <v-btn class="transparent-btn">Contact our team</v-btn>
             </div>
-            <div class="position-relative">
-            <div class="show-tab-img">
-              <img src="../assets/images/element3.png" class="element1" alt="" />
-              <img src="../assets/images/union1.png" class="element2" alt="" />
-            </div>
-            <v-img
-              lazy-src="../assets/images/dashboard.png"
-              max-height="100%"
-              max-width="100%"
-              src="../assets/images/dashboard.png"
-            ></v-img>
+            <div class="position-relative main-img">
+              <v-img src="../assets/images/dashboard.png"></v-img>
             </div>
           </v-col>
         </v-row>
-      </v-container>
+      </div>
     </div>
-    <div class="grey2 pa-12 all-sols">
-      <v-container>
+    <!-- End - Hero Section -->
+
+    <div class="all-solutions">
+      <div class="container">
         <v-row>
           <v-col>
-            <h1 class="text-center">All-in-one digital solutions</h1></v-col
-          >
+            <h1 class="text-center">All-in-one digital solutions</h1>
+          </v-col>
         </v-row>
-        <v-row class="all-cols-row">
-          <v-col lg="4" md="4" sm="6">
-            <div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+        <v-row class="sols-box-wrap">
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -77,10 +56,8 @@
               <span>Workflow approval</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -113,12 +90,10 @@
               </svg>
 
               <span>Attendance management</span>
-            </div></v-col
-          >
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+            </div>
+          </v-col>
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -137,12 +112,10 @@
               </svg>
 
               <span>Scheduling management</span>
-            </div></v-col
-          >
-          <v-col lg="4" md="4" sm="6">
-            <div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+            </div>
+          </v-col>
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -164,14 +137,11 @@
                 <path d="M35 4H5V35H35V4ZM7 33V6H33V33H7Z" fill="#294460" />
                 <path d="M31 17H25V31H31V17Z" fill="#5EC2D0" />
               </svg>
-
               <span>Salary calculation</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -188,12 +158,10 @@
               </svg>
 
               <span>Leave management</span>
-            </div></v-col
-          >
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+            </div>
+          </v-col>
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -209,12 +177,10 @@
               </svg>
 
               <span>No-code development</span>
-            </div></v-col
-          >
-          <v-col lg="4" md="4" sm="6">
-            <div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+            </div>
+          </v-col>
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -234,14 +200,11 @@
                   fill="#5EC2D0"
                 />
               </svg>
-
               <span>CRM</span>
             </div>
           </v-col>
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -255,14 +218,11 @@
                 <path d="M22 28H20V30H22V28Z" fill="#294460" />
                 <path d="M35 4H5V35H35V4ZM7 33V6H33V33H7Z" fill="#294460" />
               </svg>
-
               <span>Inventory management</span>
-            </div></v-col
-          >
-          <v-col lg="4" md="4" sm="6"
-            ><div
-              class="solution-box d-flex align-center position-relative pa-4"
-            >
+            </div>
+          </v-col>
+          <v-col lg="4" md="6">
+            <div class="sols-box">
               <svg
                 width="40"
                 height="40"
@@ -280,267 +240,280 @@
               </svg>
 
               <span>Catering POS system</span>
-            </div></v-col
-          >
-        </v-row>
-      </v-container>
-    </div>
-    <div class="solution pa-12">
-      <v-container>
-        <v-row>
-          <v-col cols="24" class="text-center position-relative">
-            <v-img
-              lazy-src="../assets/images/element22.png"
-              max-height="90"
-              max-width="90"
-              src="../assets/images/element22.png"
-              class="left"
-              alt=""
-            ></v-img>
-            <h1 class="white--text">To grow fast, it may not cost you much</h1>
-            <v-btn class="text-transform-none" color="secondary" dark>
-              Get our free solution
-            </v-btn>
-            <v-img
-              lazy-src="../assets/images/element11.png"
-              max-height="100"
-              max-width="100"
-              src="../assets/images/element11.png"
-              class="right"
-              alt=""
-            ></v-img>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="tabs">
-      <v-container>
-        <v-row>
-          <v-col cols="24">
-            <h1 class="text-center mt40">
-              We help different industries to gain advantages
-            </h1>
-            <v-tabs
-              v-model="tab"
-              background-color="transparent"
-              color="basil"
-              grow
-              class="pa-6"
-              centered
-            >
-              <v-tab href="#tab-1"> Catering </v-tab>
-
-              <v-tab href="#tab-2"> Retail </v-tab>
-
-              <v-tab href="#tab-3"> Construction </v-tab>
-              <v-tab href="#tab-4"> Education </v-tab>
-              <v-tab href="#tab-5"> Logistics </v-tab>
-            </v-tabs>
-
-            <v-tabs-items v-model="tab">
-              <v-tab-item value="tab-1">
-                <Swap
-                  v-bind:imagePath="home1"
-                  swap="true"
-                  heading="Create your custom solution"
-                  detail="One-stop Catering POS system YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
-                />
-              </v-tab-item>
-              <v-tab-item value="tab-2"
-                ><Swap
-                  v-bind:imagePath="home1"
-                  swap="true"
-                  heading="Create your custom solution"
-                  detail="One-stop Catering POS system YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
-                />
-              </v-tab-item>
-              <v-tab-item value="tab-3"
-                ><Swap
-                  v-bind:imagePath="home1"
-                  swap="true"
-                  heading="Create your custom solution"
-                  detail="One-stop Catering POS system YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
-                />
-              </v-tab-item>
-              <v-tab-item value="tab-4"
-                ><Swap
-                  v-bind:imagePath="home1"
-                  swap="true"
-                  heading="Create your custom solution"
-                  detail="One-stop Catering POS system YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
-                />
-              </v-tab-item>
-              <v-tab-item value="tab-5"
-                ><Swap
-                  v-bind:imagePath="home1"
-                  swap="true"
-                  heading="Create your custom solution"
-                  detail="One-stop Catering POS system YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
-                />
-              </v-tab-item>
-            </v-tabs-items>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <div class="grey2 testimonials pa-16">
-      <v-container>
-        <v-row>
-          <v-col>
-            <h1 class="text-center">Best stories from our clients</h1>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <VueSlickCarousel arrows="true" dots="true" v-bind="settings">
-              <div>
-                <div class="story-slider position-relative pa-16 mx-4">
-                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
-                  <p>
-                    Our monthly payroll computation is complicated and a waste
-                    of time. YOOV WORK is beyond our expectations! It can
-                    minimize the administrative workload, reduce time-wasting
-                    and human resources utilization!
-                  </p>
-                  <span>Chief Superintendent of HR Department</span>
-                  <h5>Ms.Yung</h5>
-                </div>
-              </div>
-              <div>
-                <div class="story-slider position-relative pa-16 mx-4">
-                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
-                  <p>
-                    Our monthly payroll computation is complicated and a waste
-                    of time. YOOV WORK is beyond our expectations! It can
-                    minimize the administrative workload, reduce time-wasting
-                    and human resources utilization!
-                  </p>
-                  <span>Chief Superintendent of HR Department</span>
-                  <h5>Ms.Yung</h5>
-                </div>
-              </div>
-              <div>
-                <div class="story-slider position-relative pa-16 mx-4">
-                  <img src="../assets/images/story1.png" class="mb-4" alt="" />
-                  <p>
-                    Our monthly payroll computation is complicated and a waste
-                    of time. YOOV WORK is beyond our expectations! It can
-                    minimize the administrative workload, reduce time-wasting
-                    and human resources utilization!
-                  </p>
-                  <span>Chief Superintendent of HR Department</span>
-                  <h5>Ms.Yung</h5>
-                </div>
-              </div>
-            </VueSlickCarousel>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <Swap
-      v-bind:imagePath="home2"
-      heading="Achieve corporate centralized management"
-      detail="With YOOV's one shared platform, all data are well-stored and accessible to each user. To leverage a centralized business model to achieve cross-functional collaboration and create a seamless cooperative office."
-    />
-    <Swap
-      v-bind:imagePath="home4"
-      swap="true"
-      heading="Create your custom solution"
-      detail="Highly flexible to build the optimal system framework. No technical barriers nor coding is needed. Feel free to develop your solution with YOOV's building block system."
-    />
-    <Swap
-      v-bind:imagePath="home3"
-      heading="Manage with digital business model"
-      detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
-    />
-    <div class="grey2 pa-16 position-relative mb-16 clients-section">
-      <v-container>
-        <v-row>
-          <v-col cols="12" class="text-center">
-            <h1 class="mb-8">
-              Trusted by 6000+ corporate clients from different industries
-            </h1>
-            <v-img
-              contain
-              lazy-src="../assets/images/clients.png"
-              max-height="100%"
-              max-width="100%"
-              src="../assets/images/clients.png"
-              class="clients-desktop"
-            ></v-img>
-            <v-img
-              contain
-              lazy-src="../assets/images/clients.png"
-              max-height="100%"
-              max-width="100%"
-              src="../assets/images/clients-mobile.png"
-              class="clients-mobile"
-            ></v-img>
-            <div class="grey-box d-flex d-sm-block client-bottom">
-              <v-img
-                contain
-                lazy-src="../assets/images/about1.png"
-                max-height="100%"
-                max-width="100%"
-                src="../assets/images/about1.png"
-                class="clients-bottom-img"
-              ></v-img>
-              <v-img
-                contain
-                lazy-src="../assets/images/about2.png"
-                max-height="100%"
-                max-width="100%"
-                src="../assets/images/about2.png"
-                class="clients-bottom-img"
-              ></v-img>
-              <v-img
-                contain
-                lazy-src="../assets/images/about3.png"
-                max-height="100%"
-                max-width="100%"
-                src="../assets/images/about3.png"
-                class="clients-bottom-img"
-              ></v-img>
             </div>
           </v-col>
         </v-row>
-      </v-container>
+        <span class="show-more-btn">Show More</span>
+      </div>
     </div>
-    <Contact />
+    <!-- End - All Solutions -->
+
+    <div class="try-yoov">
+      <div class="container">
+        <h1>Try YOOV for free</h1>
+        <p>Exploring ultimate work style with your demo account</p>
+        <v-btn color="secondary">Get started now</v-btn>
+      </div>
+    </div>
+    <!-- End - Try Yoov -->
+
+    <div class="solution-tabs">
+      <div class="container">
+        <v-row>
+          <v-col class="">
+            <h1>Industry application solutions</h1>
+            <p>Comprehensive solutions for different industries and needs</p>
+          </v-col>
+        </v-row>
+        <v-tabs
+          v-model="tab"
+          background-color="transparent"
+          color="basil"
+          grow
+          class="tabs-wrap"
+          centered
+        >
+          <v-tab href="#tab-1"> Catering </v-tab>
+          <v-tab href="#tab-2"> Retail </v-tab>
+          <v-tab href="#tab-3"> Construction </v-tab>
+          <v-tab href="#tab-4"> Education </v-tab>
+          <v-tab href="#tab-5"> Logistics </v-tab>
+        </v-tabs>
+        <v-tabs-items v-model="tab">
+          <v-tab-item value="tab-1">
+            <Swap
+              v-bind:imagePath="home_catering"
+              swap="true"
+              heading="Catering"
+              subhead="One-stop Catering POS system"
+              detail="YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
+            />
+          </v-tab-item>
+          <v-tab-item value="tab-2">
+            <Swap
+              v-bind:imagePath="home_retail"
+              swap="true"
+              heading="Retail"
+              subhead="One-stop Catering POS system"
+              detail="YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
+            />
+          </v-tab-item>
+          <v-tab-item value="tab-3">
+            <Swap
+              v-bind:imagePath="home_construction"
+              swap="true"
+              heading="Construction"
+              subhead="One-stop Catering POS system"
+              detail="YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
+            />
+          </v-tab-item>
+          <v-tab-item value="tab-4">
+            <Swap
+              v-bind:imagePath="home_education"
+              swap="true"
+              heading="Education"
+              subhead="One-stop Catering POS system"
+              detail="YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
+            />
+          </v-tab-item>
+          <v-tab-item value="tab-5">
+            <Swap
+              v-bind:imagePath="home_logistics"
+              swap="true"
+              heading="Logistics"
+              subhead="One-stop Catering POS system"
+              detail="YOOV EAT Cloud Restaurant Management System combine features of self-ordering, takeaway ordering and intelligent combo set etc. To digitize and automate procedures with a one-stop solution, improving revenue and table turnover rate, smooth the ordering process and stay hygiene!"
+            />
+          </v-tab-item>
+        </v-tabs-items>
+      </div>
+    </div>
+    <!-- End - Try Yoov -->
+
+    <div class="testimonials">
+      <v-row>
+        <v-col>
+          <h1>Best stories from our clients</h1>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col md="10" push-md="2" class="margin-left-auto">
+          <VueSlickCarousel arrows="true" dots="true" v-bind="settings">
+            <div class="story-slider">
+              <img src="../assets/images/story1.png" class="mb-4" alt="" />
+              <p>
+                Our monthly payroll computation is complicated and a waste of
+                time. YOOV WORK is beyond our expectations! It can minimize the
+                administrative workload, reduce time-wasting and human resources
+                utilization!
+              </p>
+              <span>Chief Superintendent of HR Department</span>
+              <h5>Ms.Yung</h5>
+            </div>
+            <div class="story-slider">
+              <img src="../assets/images/story2.png" class="mb-4" alt="" />
+              <p>
+                It has been great to work with YOOV EAT! It minimizes human
+                mistakes, speeds up our ordering process, reduces labour and
+                time costs!
+              </p>
+              <span>Restaurant owner</span>
+              <h5>Ms.Ng</h5>
+            </div>
+            <div class="story-slider">
+              <img src="../assets/images/story2.png" class="mb-4" alt="" />
+              <p>
+                It has been great to work with YOOV EAT! It minimizes human
+                mistakes, speeds up our ordering process, reduces labour and
+                time costs!
+              </p>
+              <span>Restaurant owner</span>
+              <h5>Ms.Ng</h5>
+            </div>
+          </VueSlickCarousel>
+        </v-col>
+      </v-row>
+      <span class="view-more">View more client stories</span>
+    </div>
+    <!-- End - Testimonials -->
+
+    <div class="sub-comp">
+      <div class="container">
+        <Swap
+          class="usp-1"
+          v-bind:imagePath="home_usp_1"
+          v-bind:iconPath="home_usp_icon_1"
+          v-bind:iconPathTwo="home_usp_icon_2"
+          swapIcons="true"
+          heading="Achieve corporate centralized management"
+          detail="With YOOV's one shared platform, all data are well-stored and accessible to each user. To leverage a centralized business model to achieve cross-functional collaboration and create a seamless cooperative office."
+        />
+        <Swap
+          class="usp-2"
+          v-bind:imagePath="home_usp_2"
+          v-bind:iconPath="home_usp_icon_3"
+          v-bind:iconPathTwo="home_usp_icon_4"
+          swap="true"
+          swapIcons="true"
+          heading="Create your custom solution"
+          detail="Highly flexible to build the optimal system framework. No technical barriers nor coding is needed. Feel free to develop your solution with YOOV's building block system."
+        />
+        <Swap
+          class="usp-3"
+          v-bind:imagePath="home_usp_3"
+          v-bind:iconPath="home_usp_icon_6"
+          v-bind:iconPathTwo="home_usp_icon_5"
+          swapIcons="true"
+          heading="Manage with digital business model"
+          detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
+        />
+      </div>
+    </div>
+    <!-- End Sub Comp -->
+
+    <div class="clients">
+      <div class="container">
+        <v-row>
+          <v-col>
+            <h1>Trusted by 6000+ corporate clients</h1>
+            <p>Professional, reliable, efficient</p>
+          </v-col>
+        </v-row>
+        <v-row class="client-img">
+          <v-col>
+            <v-img src="../assets/images/clients.png" alt="" />
+          </v-col>
+        </v-row>
+        <div class="awards">
+          <v-row>
+            <v-col>
+              <v-img src="../assets/images/award-01.png" alt="" />
+            </v-col>
+            <v-col>
+              <v-img src="../assets/images/award-02.png" alt="" />
+            </v-col>
+            <v-col>
+              <v-img src="../assets/images/award-03.png" alt="" />
+            </v-col>
+          </v-row>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients -->
+
+    <div class="try-yoov contact-sales">
+      <div class="container">
+        <h1>One platform, endless possibilities</h1>
+        <p>Simplify workflows, optimize operations, empower employees</p>
+        <v-btn color="primary">Contact sales</v-btn>
+      </div>
+    </div>
+    <!-- End - Try Yoov -->
   </div>
 </template>
+
 <script>
-import Contact from "../components/ContactComponent.vue";
 import Swap from "../components/Swap.vue";
-import home1 from "../assets/images/home1.png";
-import home2 from "../assets/images/home2.png";
-import home3 from "../assets/images/home3.png";
-import home4 from "../assets/images/home4.png";
+import home_catering from "../assets/images/home-img-sub-catering.png";
+import home_retail from "../assets/images/home-img-sub-retail.png";
+import home_construction from "../assets/images/home-img-sub-construction.png";
+import home_education from "../assets/images/home-img-sub-education.png";
+import home_logistics from "../assets/images/home-img-sub-logistics.png";
+import home_usp_1 from "../assets/images/home-img-sub-usp-1.png";
+import home_usp_2 from "../assets/images/home-img-sub-usp-2.png";
+import home_usp_3 from "../assets/images/home-img-sub-usp-3.png";
+
+import home_usp_icon_1 from "../assets/images/Icon-01.png";
+import home_usp_icon_2 from "../assets/images/Icon-02.png";
+import home_usp_icon_3 from "../assets/images/Icon-03.png";
+import home_usp_icon_4 from "../assets/images/Icon-04.png";
+import home_usp_icon_5 from "../assets/images/Icon-05.png";
+import home_usp_icon_6 from "../assets/images/Icon-06.png";
+
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
 export default {
-  components: { Swap, Contact, VueSlickCarousel },
+  components: { Swap, VueSlickCarousel },
   data: function () {
     return {
-      home1: home1,
-      home2: home2,
-      home3: home3,
-      home4: home4,
+      home_catering: home_catering,
+      home_retail: home_retail,
+      home_construction: home_construction,
+      home_education: home_education,
+      home_logistics: home_logistics,
+      home_usp_1: home_usp_1,
+      home_usp_2: home_usp_2,
+      home_usp_3: home_usp_3,
+      home_usp_icon_1,
+      home_usp_icon_2,
+      home_usp_icon_3,
+      home_usp_icon_4,
+      home_usp_icon_5,
+      home_usp_icon_6,
       tab: null,
       settings: {
         centerMode: true,
-        centerPadding: "60px",
+        centerPadding: "0px",
         infinite: true,
         slidesToShow: 2,
-        speed: 500,
-        autoplay: true,
+        speed: 800,
+        autoplay: false,
         autoplaySpeed: 2500,
         pauseOnDotsHover: true,
         pauseOnFocus: true,
         pauseOnHover: true,
         responsive: [
+          {
+            breakpoint: 1920,
+            settings: {
+              slidesToShow: 2,
+              centerPadding: "20px",
+              slidesToScroll: 1,
+              infinite: true,
+            },
+          },
           {
             breakpoint: 769,
             settings: {
@@ -548,101 +521,11 @@ export default {
               centerPadding: "20px",
               slidesToScroll: 1,
               infinite: true,
-              
-            }
+            },
           },
-        ]
+        ],
       },
     };
   },
 };
 </script>
-
-<style scoped>
-.left {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.right {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.story-slider:before {
-  content: url("../assets/images/union.png");
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.solution-box:after {
-  font-family: "Material Icons";
-  content: "\e5cc";
-  position: absolute;
-  right: 20px;
-}
-
-.solution-box {
-  background: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.solution-box:hover {
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-.grey-box {
-  margin-bottom: -150px;
-}
-.story-slider {
-  background: #ffffff;
-  border-radius: 8px;
-}
-.solution {
-  background: #5ec2d0;
-}
-
-.v-tab.v-tab--active {
-  background: #ffffff;
-  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 99px;
-  height: 46px;
-}
-
-.element1 {
-  position: absolute;
-  left: -3%;
-  top: 20%;
-  transform: translateY(-50%);
-}
-.element2 {
-  position: absolute;
-  right: -3%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-  .element1{
-    left:-12%;
-    top:0;
-  }
-  .element2{
-    right:-12%;
-    top:-50px;
-    transform:none;
-  }
-}
-@media screen and  (max-width:767px){
-  .element1{
-    left:-12%;
-    top:0;
-  }
-  .element2{
-    right:-12%;
-    top:-50px;
-    transform:none;
-  }
-}
-</style>

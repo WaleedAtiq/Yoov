@@ -103,9 +103,23 @@
         </v-row>
         <div class="footer-bottom">
           <v-row
-            class="py-2 white--text text-center justify-space-between align-center"
+            class="
+              py-2
+              white--text
+              text-center
+              justify-space-between
+              align-center
+            "
           >
-            <v-col class="d-flex justify-space-between align-center footer-copyright d-md-flex d-sm-block">
+            <v-col
+              class="
+                d-flex
+                justify-space-between
+                align-center
+                footer-copyright
+                d-md-flex d-sm-block
+              "
+            >
               <span>
                 ©{{ new Date().getFullYear() }} — YOOV Internet Technology (HK)
                 Limited</span
@@ -183,10 +197,9 @@ a {
   line-height: 40px;
   text-align: center;
 }
-.footer-links-no-pad .no-pad-sm{
-  padding-left:0;
-  padding-right:0;
-  min-width:40px;
+.footer-links-no-pad .no-pad-sm {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 40px;
 }
-
 </style>
