@@ -18,6 +18,22 @@ body {
     color: #272e3b;
 }
 
+/* body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00aeef50;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #00aeef;
+} */
+
 /* Hero Section ---------------------------------- */
 
 .hero-banner {
@@ -64,8 +80,8 @@ body {
 .hero-banner .main-img:before {
     content: "";
     position: absolute;
-    top: -96px;
-    left: -96px;
+    top: -72px;
+    left: -48px;
     width: 164px;
     height: 164px;
     background-image: url(../assets/images/element3.png);
@@ -80,7 +96,7 @@ body {
     top: -96px;
     right: -96px;
     width: 164px;
-    height: 164px;
+    height: 456px;
     background-image: url(../assets/images/union1.png);
     background-position: center;
     background-size: 100%;
@@ -183,7 +199,7 @@ body {
     height: 120px;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 144px;
 }
 .try-yoov:after {
     content: "";
@@ -195,7 +211,7 @@ body {
     height: 120px;
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    right: 144px;
 }
 .try-yoov h1 {
     font-weight: 600;
@@ -472,6 +488,8 @@ body {
 }
 .float-icon {
     position: absolute !important;
+    box-shadow: 0px 0px 16px #00000015;
+    border-radius: 24px;
     z-index: 2;
 }
 .float-icon.top {
@@ -536,6 +554,9 @@ body {
     border-radius: 8px;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Contact Sales */
@@ -558,4 +579,18 @@ body {
 }
 .contact-sales p {
     color: #294460;
+}
+
+.container {
+    max-width: calc(100% - 144px) !important;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: calc(100% - 24px) !important;
+    }
+    .clients .awards {
+        width: 100%;
+    }
 }

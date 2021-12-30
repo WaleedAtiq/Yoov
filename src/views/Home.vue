@@ -425,17 +425,9 @@
           </v-col>
         </v-row>
         <div class="awards">
-          <v-row>
-            <v-col>
-              <v-img src="../assets/images/award-01.png" alt="" />
-            </v-col>
-            <v-col>
-              <v-img src="../assets/images/award-02.png" alt="" />
-            </v-col>
-            <v-col>
-              <v-img src="../assets/images/award-03.png" alt="" />
-            </v-col>
-          </v-row>
+          <img src="../assets/images/award-01.png" alt="" />
+          <img src="../assets/images/award-02.png" alt="" />
+          <img src="../assets/images/award-03.png" alt="" />
         </div>
       </div>
     </div>
