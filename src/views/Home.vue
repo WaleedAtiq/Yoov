@@ -271,11 +271,11 @@
           class="tabs-wrap"
           centered
         >
-          <v-tab href="#tab-1"> Catering </v-tab>
-          <v-tab href="#tab-2"> Retail </v-tab>
-          <v-tab href="#tab-3"> Construction </v-tab>
-          <v-tab href="#tab-4"> Education </v-tab>
-          <v-tab href="#tab-5"> Logistics </v-tab>
+          <v-tab href="#tab-1">Catering</v-tab>
+          <v-tab href="#tab-2">Retail</v-tab>
+          <v-tab href="#tab-3">Construction</v-tab>
+          <v-tab href="#tab-4">Education</v-tab>
+          <v-tab href="#tab-5">Logistics</v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab">
           <v-tab-item value="tab-1">

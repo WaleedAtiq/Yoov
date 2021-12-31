@@ -1,5 +1,5 @@
 <template>
-  <main class="blog">
+  <main>
     <section class="banner overflow-hidden d-flex align-center text-center">
       <v-container>
         <v-row>
@@ -14,9 +14,8 @@
     <section class="blog-listings pa-16">
       <v-container>
         <v-row>
-          <v-col v-for="item in blogs" :key="item" lg="4" md="6" sm="12">
-            <!-- <router-link v-bind:to="item.link"> -->
-            <router-link v-bind:to="`/${$i18n.locale}${item.link}`">
+          <v-col v-for="item in blogs" :key="item" lg="4">
+            <router-link v-bind:to="item.link">
               <div class="blog-card">
                 <div class="blog-img">{{ item.blogImg }}</div>
                 <div class="blog-detail pa-6">

@@ -30,5 +30,6 @@ export default {
 .sub-heading h2 {
   position: relative;
   font-size: 32px;
+  margin-bottom: 24px;
 }
 </style>

@@ -2,7 +2,7 @@
   <v-card>
     <v-app-bar class="custom-header-two" height="88">
       <v-container>
-        <v-row class="hidden-sm-and-down">
+        <v-row class="hidden-md-and-down">
           <v-col class="text-end pa-0">
             <v-btn text>
               <router-link class="text-decoration-none fs-12" to="/">
@@ -59,7 +59,7 @@
                 </svg>
               </router-link>
             </v-toolbar-title>
-            <div class="hidden-sm-and-down">
+            <div class="hidden-md-and-down">
               <v-menu offset-y>
                 <template v-slot:activator="{ on, attrs }">
                   <v-btn text v-bind="attrs" v-on="on">{{
@@ -109,7 +109,7 @@
             <v-btn color="secondary" class="white--text hidden-sm-and-down">{{
               $t("nav.signup")
             }}</v-btn>
-            <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true">
+            <v-app-bar-nav-icon class="hidden-lg-and-up" @click="drawer = true">
             </v-app-bar-nav-icon>
           </v-col>
         </v-row>
@@ -157,6 +157,23 @@
               {{ $t("nav.signup") }}
             </router-link>
           </v-list-item>
+          <v-list-item>
+            <v-menu offset-y>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn text v-bind="attrs" v-on="on">
+                  {{ $i18n.locale.toUpperCase() }}
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click.prevent="setLocale('en')">
+                  <v-list-item-title>EN</v-list-item-title>
+                </v-list-item>
+                <v-list-item @click.prevent="setLocale('tc')">
+                  <v-list-item-title>TC</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -191,9 +208,14 @@ export default {
   color: #294460;
 }
 .custom-header-two {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 9;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+}
+.v-sheet.v-card:not(.v-sheet--outlined) {
+  box-shadow: none !important;
 }
 .custom-header-two button {
   font-weight: 500;
@@ -201,5 +223,21 @@ export default {
   line-height: 160%;
   text-align: center;
   text-transform: inherit;
+}
+.v-navigation-drawer {
+  z-index: 9;
+}
+.v-list--nav .v-list-item:last-child button {
+  border: 1px solid #ebebeb;
+}
+@media screen and (max-width: 1024px) {
+  .v-navigation-drawer {
+    width: 50vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-navigation-drawer {
+    width: 75vw !important;
+  }
 }
 </style>

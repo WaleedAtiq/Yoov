@@ -49,22 +49,8 @@
     <section class="grey2 pa-16">
       <v-container>
         <v-row>
-          <v-col lg="6" md="12">
-            <div class="position-relative d-inline-block sub-heading">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24 0C24 13.2548 13.2548 24 0 24V0L24 0Z"
-                  fill="#5EC2D0"
-                />
-              </svg>
-              <h2>About Us</h2>
-            </div>
+          <v-col lg="6">
+            <SubHeading heading="About" />
             <p class="w-80">
               Since day one, YOOV has been devoting itself in advocating digital
               automated management among Hong Kong businesses. According to
@@ -96,8 +82,8 @@
             </v-img>
           </v-col>
         </v-row>
-        <v-row class="margin-top">
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+        <v-row>
+          <v-col lg="4">
             <div class="card pa-5 text-center">
               <h2>Mission</h2>
               <p>
@@ -107,7 +93,7 @@
               </p>
             </div>
           </v-col>
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+          <v-col lg="4">
             <div class="card pa-5 text-center">
               <h2>Vision</h2>
               <p>
@@ -117,7 +103,7 @@
               </p>
             </div>
           </v-col>
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+          <v-col lg="4">
             <div class="card pa-5 text-center">
               <h2>Value</h2>
               <p>
@@ -134,167 +120,36 @@
       <v-container>
         <v-row>
           <v-col>
-            <div class="position-relative d-inline-block sub-heading">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24 0C24 13.2548 13.2548 24 0 24V0L24 0Z"
-                  fill="#5EC2D0"
-                />
-              </svg>
-              <h2>Our Histroy</h2>
-            </div>
             <v-timeline>
-              <v-timeline-item small>
+              <v-timeline-item
+                v-for="(year, i) in years"
+                :key="i"
+                :color="year.color"
+                small
+              >
                 <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2021</span>
+                  <span
+                    :class="`headline font-weight-bold ${year.color}--text`"
+                    v-text="year.year"
+                  ></span>
                 </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2021</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Jun 2021</h2>
-                  <div class="details">
-                    Launch YOOV DOMAIN, YOOV EMAIL and YOOV DIY Website Builder
-                  </div>
-                </div>
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">May 2021</h2>
-                  <div class="details">Total Client Count Reaches 5000</div>
-                </div>
-              </v-timeline-item>
-              <!-- Items -->
-
-              <v-timeline-item small>
-                <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2020</span>
-                </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2020</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Apr 2020</h2>
-                  <div class="details">Total Client Count Reaches 3000</div>
-                </div>
-              </v-timeline-item>
-              <!-- Items -->
-
-              <v-timeline-item small>
-                <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2019</span>
-                </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2019</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Jun 2019</h2>
-                  <div class="details">
-                    Launch YOOV DOMAIN, YOOV EMAIL and YOOV DIY Website Builder
-                  </div>
-                </div>
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Apr 2019</h2>
-                  <div class="details">
-                    Title Sponsor of TVB’s ‘Innovation GPS’ TV program
+                <div class="py-4">
+                  <h2
+                    :class="`headline font-weight-light mb-4 ${year.color}--text`"
+                  >
+                    Lorem ipsum
+                  </h2>
+                  <div>
+                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                    scaevola imperdiet nec ut, sed euismod convenire principes
+                    at. Est et nobis iisque percipit, an vim zril disputando
+                    voluptatibus, vix an salutandi sententiae.
                   </div>
                 </div>
               </v-timeline-item>
-              <!-- Items -->
-
-              <v-timeline-item small>
-                <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2018</span>
-                </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2018</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Feb 2018</h2>
-                  <div class="details">Angel Round Funding Obtained</div>
-                  <div class="details more">
-                    (Investment by Mirae Asset, a Subsidiary of Korea
-                    Development Bank, and Agriculture Fund of China, a
-                    Subsidiary of Chinese Academy of Agricultural Sciences)
-                  </div>
-                </div>
-              </v-timeline-item>
-              <!-- Items -->
-
-              <v-timeline-item small>
-                <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2017</span>
-                </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2017</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Apr 2017</h2>
-                  <div class="details">Seed Round Funding Obtained</div>
-                </div>
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Feb 2017</h2>
-                  <div class="details">YOOV EAT Launched</div>
-                </div>
-              </v-timeline-item>
-              <!-- Items -->
-
-              <v-timeline-item small>
-                <template v-slot:opposite>
-                  <span class="headline font-weight-bold">2016</span>
-                </template>
-                <span class="headline font-weight-bold clients-mobile"
-                  >2016</span
-                >
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">Dec 2016</h2>
-                  <div class="details">YOOV WORK Launched</div>
-                </div>
-                <div class="event">
-                  <h2 class="headline year font-weight-light mb-4">May 2016</h2>
-                  <div class="details">YOOV Established</div>
-                </div>
-              </v-timeline-item>
-              <!-- Items -->
             </v-timeline>
           </v-col>
         </v-row>
-        <div class="position-relative d-inline-block sub-heading">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M24 0C24 13.2548 13.2548 24 0 24V0L24 0Z" fill="#5EC2D0" />
-          </svg>
-          <h2>Awards</h2>
-        </div>
-        <div class="awards">
-          <div class="wrap">
-            <div class="img">
-              <img src="../assets/images/award-01.png" alt="" />
-            </div>
-            <div class="text">Capital Outstanding eCommerce Awards 2020/21</div>
-          </div>
-          <div class="wrap">
-            <div class="img">
-              <img src="../assets/images/award-02.png" alt="" />
-            </div>
-            <div class="text">Happy Company 2021</div>
-          </div>
-          <div class="wrap">
-            <div class="img">
-              <img src="../assets/images/award-03.png" alt="" />
-            </div>
-            <div class="text">Capital Outstanding eCommerce Awards 2020/21</div>
-          </div>
-        </div>
       </v-container>
     </section>
     <section class="grey2 pa-16">
@@ -337,9 +192,9 @@
 </template>
 
 <script>
-// import SubHeading from "../components/SubHeading.vue";
+import SubHeading from "../components/SubHeading.vue";
 export default {
-  // components: { SubHeading },
+  components: { SubHeading },
   data: () => ({
     years: [
       {
@@ -349,8 +204,6 @@ export default {
       {
         color: "cyan",
         year: "2020",
-        heading: "Jun 2021",
-        text: "",
       },
       {
         color: "cyan",
@@ -395,18 +248,5 @@ export default {
   background: #ffffff;
   border-radius: 8px;
   border-top: 6px solid #5ec2d0;
-}
-.card p {
-  font-size: 14px;
-}
-.sub-heading svg {
-  position: absolute;
-  top: -8px;
-  left: -6px;
-}
-.sub-heading h2 {
-  position: relative;
-  font-size: 32px;
-  margin-bottom: 24px;
 }
 </style>

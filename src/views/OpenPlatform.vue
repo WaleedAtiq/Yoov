@@ -1,6 +1,16 @@
 <template>
-  <main>
-    <section class="banner"></section>
+  <main class="openplatform">
+    <section class="banner overflow-hidden d-flex align-center text-center">
+      <v-container>
+        <v-row>
+          <v-col class="position-relative">
+            <img src="../assets/images/element31.png" class="left" alt="" />
+            <h1 class="white--text text-h2 font-weight-medium">Blog</h1>
+            <img src="../assets/images/element32.png" class="right" alt="" />
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
     <section class="clients grey2 pa-16">
       <v-container>
         <v-row class="justify-center mb-16">
@@ -11,7 +21,7 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col v-for="item in clients" :key="item" lg="3">
+          <v-col v-for="item in clients" :key="item" lg="3" md="6" sm="12">
             <div>
               <div v-html="item.icons"></div>
               <h3>{{ item.title }}</h3>
@@ -28,7 +38,7 @@
         </v-row>
       </v-container>
     </section>
-    <section class="provider pa-16">
+    <section class="provider">
       <v-container>
         <v-row class="justify-center">
           <v-col lg="8">
@@ -39,28 +49,60 @@
               src="../assets/images/yoovwork.png"
             ></v-img>
           </v-col>
+        </v-row>
+        <v-row class="justify-center">
           <v-col>
             <div class="tabs">
               <v-container>
                 <v-row>
-                  <v-col cols="12">
+                  <v-col lg="10" offset-lg="1" md="12" sm="12">
                     <v-tabs
                       v-model="tab"
                       background-color="transparent"
                       color="basil"
                       grow
-                      class="pa-6"
+                      class="tabs-wrap"
                       centered
                     >
-                      <v-tab href="#tab-1"> Catering </v-tab>
-                      <v-tab href="#tab-2"> Retail </v-tab>
-                      <v-tab href="#tab-3"> Construction </v-tab>
+                      <v-tab href="#tab-1">App service provider</v-tab>
+                      <v-tab href="#tab-2">Tailored service provider</v-tab>
+                      <v-tab href="#tab-3">In-house development</v-tab>
                     </v-tabs>
 
-                    <v-tabs-items v-model="tab">
-                      <v-tab-item value="tab-1"> 123 </v-tab-item>
-                      <v-tab-item value="tab-2"> 345</v-tab-item>
-                      <v-tab-item value="tab-3">567 </v-tab-item>
+                    <v-tabs-items v-model="tab" class="tab-item-wrap">
+                      <v-tab-item value="tab-1">
+                        <div class="text-center">
+                          <h2>Become a YOOV system app service provider</h2>
+                          <p>
+                            YOOV platform is fully equipped with fundamental
+                            features. Use the platform to develop apps for the
+                            industry, reducing development costs while gaining
+                            customers.
+                          </p>
+                        </div>
+                      </v-tab-item>
+                      <v-tab-item value="tab-2">
+                        <div class="text-center">
+                          <h2>Become a YOOV system app service provider</h2>
+                          <p>
+                            YOOV platform is fully equipped with fundamental
+                            features. Use the platform to develop apps for the
+                            industry, reducing development costs while gaining
+                            customers.
+                          </p>
+                        </div>
+                      </v-tab-item>
+                      <v-tab-item value="tab-3">
+                        <div class="text-center">
+                          <h2>Become a YOOV system app service provider</h2>
+                          <p>
+                            YOOV platform is fully equipped with fundamental
+                            features. Use the platform to develop apps for the
+                            industry, reducing development costs while gaining
+                            customers.
+                          </p>
+                        </div>
+                      </v-tab-item>
                     </v-tabs-items>
                   </v-col>
                 </v-row>
@@ -70,6 +112,18 @@
         </v-row>
       </v-container>
     </section>
+    <section class="learn">
+      <div class="container">
+        <div class="learnmore">
+          <h1>Want to learn more?</h1>
+          <p>
+            Our experts are ready to show you more about our products and
+            services
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End - Try Yoov -->
   </main>
 </template>
 
@@ -116,11 +170,30 @@ export default {
 </script>
 
 <style scoped>
+.banner {
+  background: #294460;
+  height: 30vh;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 .clients h3 {
   color: #294460;
 }
-
 .clients p {
   color: #4e5969;
+  text-align: left;
+  margin-right: 12px;
+}
+.sub-heading svg {
+  top: -8px;
+  left: -8px;
 }
 </style>

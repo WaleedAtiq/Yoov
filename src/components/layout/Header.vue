@@ -109,7 +109,7 @@
             <v-btn class="black--text hidden-sm-and-down">{{
               $t("nav.signup")
             }}</v-btn>
-            <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true">
+            <v-app-bar-nav-icon class="hidden-lg-and-up" @click="drawer = true">
             </v-app-bar-nav-icon>
           </v-col>
         </v-row>
@@ -156,6 +156,23 @@
             <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.signup") }}
             </router-link>
+          </v-list-item>
+          <v-list-item>
+            <v-menu offset-y>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn text v-bind="attrs" v-on="on">
+                  {{ $i18n.locale.toUpperCase() }}
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click.prevent="setLocale('en')">
+                  <v-list-item-title>EN</v-list-item-title>
+                </v-list-item>
+                <v-list-item @click.prevent="setLocale('tc')">
+                  <v-list-item-title>TC</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -213,5 +230,18 @@ export default {
 }
 .custom-header select option {
   color: #333333;
+}
+.v-navigation-drawer {
+  z-index: 9;
+}
+@media screen and (max-width: 1024px) {
+  .v-navigation-drawer {
+    width: 50vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-navigation-drawer {
+    width: 75vw !important;
+  }
 }
 </style>
