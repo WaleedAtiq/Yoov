@@ -97,7 +97,7 @@
           </v-col>
         </v-row>
         <v-row class="margin-top">
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
             <div class="card pa-5 text-center">
               <h2>Mission</h2>
               <p>
@@ -107,7 +107,7 @@
               </p>
             </div>
           </v-col>
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
             <div class="card pa-5 text-center">
               <h2>Vision</h2>
               <p>
@@ -117,7 +117,7 @@
               </p>
             </div>
           </v-col>
-          <v-col lg="4" md="10" offset-md="1" sm="12">
+          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
             <div class="card pa-5 text-center">
               <h2>Value</h2>
               <p>

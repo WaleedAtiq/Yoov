@@ -3,7 +3,7 @@ module.exports = {
     'vuetify'
   ],
 
-  publicPath: "/yoov",
+  publicPath: "/yoov2",
 
   pluginOptions: {
     i18n: {
