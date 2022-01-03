@@ -17,10 +17,10 @@
               </template>
               <v-list>
                 <v-list-item @click.prevent="setLocale('en')">
-                  <v-list-item-title>EN</v-list-item-title>
+                  <v-list-item-title>{{ $t("nav.en") }}</v-list-item-title>
                 </v-list-item>
                 <v-list-item @click.prevent="setLocale('tc')">
-                  <v-list-item-title>TC</v-list-item-title>
+                  <v-list-item-title>{{ $t("nav.tc") }}</v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-menu>

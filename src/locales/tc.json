@@ -10,7 +10,9 @@
         "logout": "登出",
         "en": "EN",
         "tc": "繁體",
-        "show more": "顯示更多"
+        "show more": "顯示更多",
+        "privacy policy": "隱私政策",
+        "terms conditions": "條款和條件"
     },
     "home": {
         "hero-title": "一個平台，帶來無限優勢",

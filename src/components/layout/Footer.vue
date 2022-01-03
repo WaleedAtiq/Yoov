@@ -40,9 +40,12 @@
             <h5>Company</h5>
             <ul>
               <li>
-                <router-link class="text-decoration-none" to="/about"
-                  >About us</router-link
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/about`"
                 >
+                  {{ $t("nav.about") }}
+                </router-link>
               </li>
               <li>
                 <a href="/">Join us</a>
@@ -50,7 +53,14 @@
             </ul>
             <h5>Resources</h5>
             <ul>
-              <li><a href="/">Blog</a></li>
+              <li>
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/blog`"
+                >
+                  {{ $t("nav.blog") }}
+                </router-link>
+              </li>
               <li><a href="/">Customer stories</a></li>
               <li><a href="/">Help center</a></li>
             </ul>
@@ -103,16 +113,36 @@
                 Limited</span
               >
               <div class="footer-links-no-pad">
-                <v-btn
-                  v-for="item in links"
-                  :key="item"
-                  color="white"
-                  text
-                  rounded
-                  class="my-2 no-pad-sm"
-                >
-                  <router-link :to="`/${$i18n.locale}/${item.link}`">
-                    {{ item.title }}
+                <v-menu offset-y>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      text
+                      v-bind="attrs"
+                      v-on="on"
+                      class="my-2 no-pad-sm"
+                      color="white"
+                      rounded
+                    >
+                      {{ $i18n.locale.toUpperCase() }}
+                    </v-btn>
+                  </template>
+                  <v-list>
+                    <v-list-item @click.prevent="setLocale('en')">
+                      <v-list-item-title>{{ $t("nav.en") }}</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item @click.prevent="setLocale('tc')">
+                      <v-list-item-title>{{ $t("nav.tc") }}</v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+                <v-btn class="my-2 no-pad-sm" color="white" text rounded>
+                  <router-link :to="`/${$i18n.locale}/privacypolicy`">
+                    {{ $t("nav.privacy policy") }}
+                  </router-link>
+                </v-btn>
+                <v-btn class="my-2 no-pad-sm" color="white" text rounded>
+                  <router-link :to="`/${$i18n.locale}/privacypolicy`">
+                    {{ $t("nav.terms conditions") }}
                   </router-link>
                 </v-btn>
               </div>
@@ -129,11 +159,24 @@ export default {
   data: () => ({
     icons: ["mdi-facebook", "mdi-linkedin", "mdi-instagram"],
     links: [
-      { title: "EN", link: "" },
-      { title: "Privacy Policy", link: "/privacypolicy" },
-      { title: "Terms & Condition", link: "" },
+      {
+        title: "Privacy Policy",
+        link: "/privacypolicy",
+      },
+      {
+        title: "Terms & Condition",
+        link: "",
+      },
     ],
   }),
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+      this.$router.push({
+        params: { lang: locale },
+      });
+    },
+  },
 };
 </script>
 

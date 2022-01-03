@@ -242,12 +242,6 @@
             </div>
           </v-col> -->
         <SolutionItemsList />
-        <span
-          class="show-more-btn"
-          @click="nextPage"
-          :disabled="currentPage == totalPages"
-          >{{ $t("nav.show more") }}</span
-        >
       </div>
     </div>
     <!-- End - All Solutions -->

@@ -15,7 +15,7 @@
       <v-container>
         <v-row>
           <v-col
-            v-for="(item, i) in historyList"
+            v-for="(item, i) in visibleBlogItems"
             :key="i"
             lg="4"
             md="6"
@@ -35,12 +35,12 @@
             </router-link>
           </v-col>
         </v-row>
-        <v-pagination
-          class="pagination mt-6"
-          v-model="page"
-          :length="pages"
-          @input="updatePage"
-        ></v-pagination>
+        <button
+          @click="blogItemsVisible += step"
+          v-if="blogItemsVisible < blogs.length"
+        >
+          Load more...
+        </button>
       </v-container>
     </section>
   </main>
@@ -50,133 +50,78 @@
 export default {
   data() {
     return {
-      page: 1,
-      pageSize: 6,
-      list: [
+      blogs: [
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 1",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 2",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 3",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 4",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 5",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 6",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 7",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 8",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
           link: "/blogdetail",
           blogImg: "",
-          title: "Blog title 9",
-          detail:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
-        },
-        {
-          link: "/blogdetail",
-          blogImg: "",
-          title: "Blog title 10",
-          detail:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
-        },
-        {
-          link: "/blogdetail",
-          blogImg: "",
-          title: "Blog title 11",
-          detail:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
-        },
-        {
-          link: "/blogdetail",
-          blogImg: "",
-          title: "Blog title 12",
-          detail:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
-        },
-        {
-          link: "/blogdetail",
-          blogImg: "",
-          title: "Blog title 13",
+          title: "Blog title",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
       ],
-      listCount: 0,
-      historyList: [],
+      blogItemsVisible: 6,
+      step: 3,
     };
   },
-  created() {
-    let _this = this;
-    _this.initPage();
-    _this.updatePage(_this.page);
-  },
-  methods: {
-    initPage: function () {
-      let _this = this;
-      _this.listCount = _this.list.length;
-      if (_this.listCount < _this.pageSize) {
-        _this.historyList = _this.list;
-      } else {
-        _this.historyList = _this.list.slice(0, _this.pageSize);
-      }
-    },
-    updatePage: function (pageIndex) {
-      let _this = this;
-      let _start = (pageIndex - 1) * _this.pageSize;
-      let _end = pageIndex * _this.pageSize;
-      _this.historyList = _this.list.slice(_start, _end);
-      _this.page = pageIndex;
-    },
-  },
   computed: {
-    pages() {
-      let _this = this;
-      if (_this.pageSize == null || _this.listCount == null) return 0;
-      return Math.ceil(_this.listCount / _this.pageSize);
+    visibleBlogItems() {
+      return this.blogs.slice(0, this.blogItemsVisible);
     },
   },
 };

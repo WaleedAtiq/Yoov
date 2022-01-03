@@ -10,7 +10,9 @@
         "logout": "Log Out",
         "en": "EN",
         "tc": "TC",
-        "show more": "Show More"
+        "show more": "Show More",
+        "privacy policy": "Privacy Policy",
+        "terms conditions": "Terms & Conditions"
     },
     "home": {
         "hero-title": "One platform, beyond one value",

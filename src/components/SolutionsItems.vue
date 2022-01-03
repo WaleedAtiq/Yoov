@@ -1,20 +1,19 @@
 <template>
   <v-row class="sols-box-wrap">
-    <v-col
-      v-for="(solItems, i) in SolutionItems && (product, i) in toBeShown"
-      :key="i"
-      lg="4"
-      md="6"
-    >
+    <v-col v-for="(solItems, i) in visibleSolutionItems" :key="i" lg="4" md="6">
       <div class="sols-box">
         <div class="icon-holder">
           <img :src="getImgUrl(solItems.title)" alt="" />
         </div>
-        <!-- <v-span v-if="$i18n.locale === 'en'">{{ solItems.title }}</v-span> -->
-        <!-- <v-span v-else>{{ solItems.titleTC }}</v-span> -->
         <span>{{ $t("homeSolutions." + solItems.title) }}</span>
       </div>
     </v-col>
+    <span
+      class="show-more-btn"
+      @click="SolutionItemsVisible += step"
+      v-if="SolutionItemsVisible < SolutionItems.length"
+      >{{ $t("nav.show more") }}</span
+    >
   </v-row>
 </template>
 <script>
@@ -28,7 +27,6 @@ export default {
         return images("./no-icon.svg");
       }
     },
-    el: "#app",
     SolutionItems: [
       {
         title: "Workflow approval",
@@ -67,22 +65,12 @@ export default {
         title: "User center",
       },
     ],
-    currentPage: 1,
+    SolutionItemsVisible: 9,
+    step: 3,
   }),
   computed: {
-    toBeShown() {
-      return this.products.slice(0, this.currentPage * 4);
-    },
-    totalPages() {
-      return Math.ceil(this.products.length / 4);
-    },
-  },
-  methods: {
-    nextPage() {
-      if (this.currentPage < this.totalPages) this.currentPage++;
-    },
-    prevPage() {
-      this.currentPage = this.currentPage - 1 || 1;
+    visibleSolutionItems() {
+      return this.SolutionItems.slice(0, this.SolutionItemsVisible);
     },
   },
 };
