@@ -148,6 +148,112 @@
                 </div>
               </v-timeline-item>
             </v-timeline>
+            <!-- <v-timeline>
+              <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2021</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2021</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Jun 2021</h2>
+                  <div class="details">
+                    Launch YOOV DOMAIN, YOOV EMAIL and YOOV DIY Website Builder
+                  </div>
+                </div>
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">May 2021</h2>
+                  <div class="details">Total Client Count Reaches 5000</div>
+                </div>
+              </v-timeline-item> -->
+
+            <!-- <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2020</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2020</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Apr 2020</h2>
+                  <div class="details">Total Client Count Reaches 3000</div>
+                </div>
+              </v-timeline-item> -->
+
+            <!-- <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2019</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2019</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Jun 2019</h2>
+                  <div class="details">
+                    Launch YOOV DOMAIN, YOOV EMAIL and YOOV DIY Website Builder
+                  </div>
+                </div>
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Apr 2019</h2>
+                  <div class="details">
+                    Title Sponsor of TVB’s ‘Innovation GPS’ TV program
+                  </div>
+                </div>
+              </v-timeline-item> -->
+
+            <!-- <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2018</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2018</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Feb 2018</h2>
+                  <div class="details">Angel Round Funding Obtained</div>
+                  <div class="details more">
+                    (Investment by Mirae Asset, a Subsidiary of Korea
+                    Development Bank, and Agriculture Fund of China, a
+                    Subsidiary of Chinese Academy of Agricultural Sciences)
+                  </div>
+                </div>
+              </v-timeline-item> -->
+
+            <!-- <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2017</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2017</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Apr 2017</h2>
+                  <div class="details">Seed Round Funding Obtained</div>
+                </div>
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Feb 2017</h2>
+                  <div class="details">YOOV EAT Launched</div>
+                </div>
+              </v-timeline-item> -->
+
+            <!-- <v-timeline-item small>
+                <template v-slot:opposite>
+                  <span class="headline font-weight-bold">2016</span>
+                </template>
+                <span class="headline font-weight-bold clients-mobile"
+                  >2016</span
+                >
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">Dec 2016</h2>
+                  <div class="details">YOOV WORK Launched</div>
+                </div>
+                <div class="event">
+                  <h2 class="headline year font-weight-light mb-4">May 2016</h2>
+                  <div class="details">YOOV Established</div>
+                </div>
+              </v-timeline-item>
+            </v-timeline> -->
           </v-col>
         </v-row>
       </v-container>

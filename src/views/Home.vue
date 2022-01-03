@@ -25,11 +25,12 @@
       <div class="container">
         <v-row>
           <v-col>
-            <h1 class="text-center">All-in-one digital solutions</h1>
+            <h1 class="text-center">
+              {{ $t("homeSolutions.solution-head") }}
+            </h1>
           </v-col>
         </v-row>
-        <v-row class="sols-box-wrap">
-          <v-col lg="4" md="6">
+        <!-- <v-col lg="4" md="6">
             <div class="sols-box">
               <svg
                 width="40"
@@ -239,9 +240,14 @@
 
               <span>Catering POS system</span>
             </div>
-          </v-col>
-        </v-row>
-        <span class="show-more-btn">Show More</span>
+          </v-col> -->
+        <SolutionItemsList />
+        <span
+          class="show-more-btn"
+          @click="nextPage"
+          :disabled="currentPage == totalPages"
+          >{{ $t("nav.show more") }}</span
+        >
       </div>
     </div>
     <!-- End - All Solutions -->
@@ -469,12 +475,13 @@ import home_usp_icon_4 from "../assets/images/Icon-04.png";
 import home_usp_icon_5 from "../assets/images/Icon-05.png";
 import home_usp_icon_6 from "../assets/images/Icon-06.png";
 
+import SolutionItemsList from "../components/SolutionsItems.vue";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
-  components: { Swap, VueSlickCarousel },
+  components: { Swap, VueSlickCarousel, SolutionItemsList },
   data: function () {
     return {
       home_catering: home_catering,

@@ -9,7 +9,8 @@
         "login": "登入",
         "logout": "登出",
         "en": "EN",
-        "tc": "繁體"
+        "tc": "繁體",
+        "show more": "顯示更多"
     },
     "home": {
         "hero-title": "一個平台，帶來無限優勢",
@@ -20,5 +21,20 @@
         "hero-subtitle-5": "帶來倉存管理的優勢",
         "hero-cta-1": "預約示範",
         "hero-cta-2": "聯絡我們"
+    },
+    "homeSolutions": {
+        "solution-head": "一站式數字化解決方案",
+        "Workflow approval": "流程審批",
+        "No-code development": "無代碼開發",
+        "Attendance management": "考勤管理",
+        "Scheduling management": "排班管理",
+        "Salary calculation": "薪酬計算",
+        "Leave management": "假期管理",
+        "Catering POS system": "餐飲 POS 系統",
+        "Business email": "企業電郵",
+        "Corporate domain": "企業網域",
+        "Employee management": "員工管理",
+        "Invoice factoring": "發票融資",
+        "User center": "用戶中心"
     }
 }

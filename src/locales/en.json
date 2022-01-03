@@ -9,7 +9,8 @@
         "login": "Log In",
         "logout": "Log Out",
         "en": "EN",
-        "tc": "TC"
+        "tc": "TC",
+        "show more": "Show More"
     },
     "home": {
         "hero-title": "One platform, beyond one value",
@@ -20,5 +21,20 @@
         "hero-subtitle-5": "Optimize your inventory management now",
         "hero-cta-1": "Book a demo",
         "hero-cta-2": "Contact Us"
+    },
+    "homeSolutions": {
+        "solution-head": "All in-one digital solutions",
+        "Workflow approval": "Workflow approval",
+        "No-code development": "No-code development",
+        "Attendance management": "Attendance management",
+        "Scheduling management": "Scheduling management",
+        "Salary calculation": "Salary calculation",
+        "Leave management": "Leave management",
+        "Catering POS system": "Catering POS system",
+        "Business email": "Business email",
+        "Corporate domain": "Corporate domain",
+        "Employee management": "Employee management",
+        "Invoice factoring": "Invoice factoring",
+        "User center": "User center"
     }
 }

@@ -111,7 +111,7 @@
                   rounded
                   class="my-2 no-pad-sm"
                 >
-                  <router-link v-bind:to="item.link">
+                  <router-link :to="`/${$i18n.locale}/${item.link}`">
                     {{ item.title }}
                   </router-link>
                 </v-btn>
