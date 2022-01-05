@@ -280,7 +280,9 @@
         <v-tabs-items v-model="tab">
           <v-tab-item value="tab-1">
             <Swap
-              v-bind:imagePath="home_catering"
+              v-bind:imagePath="
+                require('../assets/images/home-img-sub-catering.png')
+              "
               swap="true"
               heading="Catering"
               subhead="One-stop Catering POS system"
@@ -289,7 +291,9 @@
           </v-tab-item>
           <v-tab-item value="tab-2">
             <Swap
-              v-bind:imagePath="home_retail"
+              v-bind:imagePath="
+                require('../assets/images/home-img-sub-retail.png')
+              "
               swap="true"
               heading="Retail"
               subhead="One-stop Catering POS system"
@@ -298,7 +302,9 @@
           </v-tab-item>
           <v-tab-item value="tab-3">
             <Swap
-              v-bind:imagePath="home_construction"
+              v-bind:imagePath="
+                require('../assets/images/home-img-sub-construction.png')
+              "
               swap="true"
               heading="Construction"
               subhead="One-stop Catering POS system"
@@ -307,7 +313,9 @@
           </v-tab-item>
           <v-tab-item value="tab-4">
             <Swap
-              v-bind:imagePath="home_education"
+              v-bind:imagePath="
+                require('../assets/images/home-img-sub-education.png')
+              "
               swap="true"
               heading="Education"
               subhead="One-stop Catering POS system"
@@ -316,7 +324,9 @@
           </v-tab-item>
           <v-tab-item value="tab-5">
             <Swap
-              v-bind:imagePath="home_logistics"
+              v-bind:imagePath="
+                require('../assets/images/home-img-sub-logistics.png')
+              "
               swap="true"
               heading="Logistics"
               subhead="One-stop Catering POS system"
@@ -334,43 +344,45 @@
           <h1>Best stories from our clients</h1>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col md="10" push-md="2" class="margin-left-auto">
-          <VueSlickCarousel arrows="true" dots="true" v-bind="settings">
-            <div class="story-slider">
-              <img src="../assets/images/story1.png" class="mb-4" alt="" />
-              <p>
-                Our monthly payroll computation is complicated and a waste of
-                time. YOOV WORK is beyond our expectations! It can minimize the
-                administrative workload, reduce time-wasting and human resources
-                utilization!
-              </p>
-              <span>Chief Superintendent of HR Department</span>
-              <h5>Ms.Yung</h5>
-            </div>
-            <div class="story-slider">
-              <img src="../assets/images/story2.png" class="mb-4" alt="" />
-              <p>
-                It has been great to work with YOOV EAT! It minimizes human
-                mistakes, speeds up our ordering process, reduces labour and
-                time costs!
-              </p>
-              <span>Restaurant owner</span>
-              <h5>Ms.Ng</h5>
-            </div>
-            <div class="story-slider">
-              <img src="../assets/images/story2.png" class="mb-4" alt="" />
-              <p>
-                It has been great to work with YOOV EAT! It minimizes human
-                mistakes, speeds up our ordering process, reduces labour and
-                time costs!
-              </p>
-              <span>Restaurant owner</span>
-              <h5>Ms.Ng</h5>
-            </div>
-          </VueSlickCarousel>
-        </v-col>
-      </v-row>
+      <div class="container">
+        <v-row>
+          <v-col md="12" class="margin-left-auto">
+            <VueSlickCarousel arrows="true" dots="true" v-bind="settings">
+              <div class="story-slider">
+                <img src="../assets/images/story1.png" class="mb-4" alt="" />
+                <p>
+                  Our monthly payroll computation is complicated and a waste of
+                  time. YOOV WORK is beyond our expectations! It can minimize
+                  the administrative workload, reduce time-wasting and human
+                  resources utilization!
+                </p>
+                <span>Chief Superintendent of HR Department</span>
+                <h5>Ms.Yung</h5>
+              </div>
+              <div class="story-slider">
+                <img src="../assets/images/story2.png" class="mb-4" alt="" />
+                <p>
+                  It has been great to work with YOOV EAT! It minimizes human
+                  mistakes, speeds up our ordering process, reduces labour and
+                  time costs!
+                </p>
+                <span>Restaurant owner</span>
+                <h5>Ms.Ng</h5>
+              </div>
+              <div class="story-slider">
+                <img src="../assets/images/story2.png" class="mb-4" alt="" />
+                <p>
+                  It has been great to work with YOOV EAT! It minimizes human
+                  mistakes, speeds up our ordering process, reduces labour and
+                  time costs!
+                </p>
+                <span>Restaurant owner</span>
+                <h5>Ms.Ng</h5>
+              </div>
+            </VueSlickCarousel>
+          </v-col>
+        </v-row>
+      </div>
       <span class="view-more">View more client stories</span>
     </div>
     <!-- End - Testimonials -->
@@ -379,31 +391,31 @@
       <div class="container">
         <Swap
           class="usp-1"
-          v-bind:imagePath="home_usp_1"
-          v-bind:iconPath="home_usp_icon_1"
-          v-bind:iconPathTwo="home_usp_icon_2"
+          v-bind:imagePath="require('../assets/images/home-img-sub-usp-1.png')"
+          v-bind:iconPath="require('../assets/images/Icon-02.png')"
+          v-bind:iconPathTwo="require('../assets/images/Icon-01.png')"
           swapIcons="true"
           heading="Achieve corporate centralized management"
-          detail="With YOOV's one shared platform, all data are well-stored and accessible to each user. To leverage a centralized business model to achieve cross-functional collaboration and create a seamless cooperative office."
+          detail="Are you working with individual software solutions but difficult in real-time data integration? With YOOV's one shared platform, all data are well-stored and available to each department unit, to leverage the one central database to achieve cross-functional collaboration. Enjoy seamless cooperative office and stay high efficiency with our centralized management style."
         />
         <Swap
           class="usp-2"
-          v-bind:imagePath="home_usp_2"
-          v-bind:iconPath="home_usp_icon_3"
-          v-bind:iconPathTwo="home_usp_icon_4"
+          v-bind:imagePath="require('../assets/images/home-img-sub-usp-2.png')"
+          v-bind:iconPath="require('../assets/images/Icon-04.png')"
+          v-bind:iconPathTwo="require('../assets/images/Icon-03.png')"
           swap="true"
           swapIcons="true"
           heading="Create your custom solution"
-          detail="Highly flexible to build the optimal system framework. No technical barriers nor coding is needed. Feel free to develop your solution with YOOV's building block system."
+          detail="Highly flexible, build the optimal system framework to fit your business needs. No technical barriers and without coding. Easy to use, you can pick it up quickly. Feel accessible in developing your own solution at anytime with YOOV's building block system."
         />
         <Swap
           class="usp-3"
-          v-bind:imagePath="home_usp_3"
-          v-bind:iconPath="home_usp_icon_6"
-          v-bind:iconPathTwo="home_usp_icon_5"
+          v-bind:imagePath="require('../assets/images/home-img-sub-usp-3.png')"
+          v-bind:iconPath="require('../assets/images/Icon-05.png')"
+          v-bind:iconPathTwo="require('../assets/images/Icon-06.png')"
           swapIcons="true"
           heading="Manage with digital business model"
-          detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
+          detail="Automate daily workflow with cloud technology. To attain all-around digitization from internal or external operations, like HRM or CRM. With YOOV, visualize operation data is available, then you can get a better understanding of corporate scale and clean direction for expansion. Enhancing operational efficiency is easier than ever."
         />
       </div>
     </div>
@@ -453,74 +465,40 @@
 
 <script>
 import Swap from "../components/Swap.vue";
-import home_catering from "../assets/images/home-img-sub-catering.png";
-import home_retail from "../assets/images/home-img-sub-retail.png";
-import home_construction from "../assets/images/home-img-sub-construction.png";
-import home_education from "../assets/images/home-img-sub-education.png";
-import home_logistics from "../assets/images/home-img-sub-logistics.png";
-import home_usp_1 from "../assets/images/home-img-sub-usp-1.png";
-import home_usp_2 from "../assets/images/home-img-sub-usp-2.png";
-import home_usp_3 from "../assets/images/home-img-sub-usp-3.png";
-
-import home_usp_icon_1 from "../assets/images/Icon-01.png";
-import home_usp_icon_2 from "../assets/images/Icon-02.png";
-import home_usp_icon_3 from "../assets/images/Icon-03.png";
-import home_usp_icon_4 from "../assets/images/Icon-04.png";
-import home_usp_icon_5 from "../assets/images/Icon-05.png";
-import home_usp_icon_6 from "../assets/images/Icon-06.png";
-
 import SolutionItemsList from "../components/SolutionsItems.vue";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
-  components: { Swap, VueSlickCarousel, SolutionItemsList },
+  components: {
+    Swap,
+    VueSlickCarousel,
+    SolutionItemsList,
+  },
   data: function () {
     return {
-      home_catering: home_catering,
-      home_retail: home_retail,
-      home_construction: home_construction,
-      home_education: home_education,
-      home_logistics: home_logistics,
-      home_usp_1: home_usp_1,
-      home_usp_2: home_usp_2,
-      home_usp_3: home_usp_3,
-      home_usp_icon_1,
-      home_usp_icon_2,
-      home_usp_icon_3,
-      home_usp_icon_4,
-      home_usp_icon_5,
-      home_usp_icon_6,
       tab: null,
       settings: {
         centerMode: true,
-        centerPadding: "0px",
+        dots: true,
         infinite: true,
-        slidesToShow: 2,
         speed: 800,
-        autoplay: false,
-        autoplaySpeed: 2500,
-        pauseOnDotsHover: true,
-        pauseOnFocus: true,
-        pauseOnHover: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
         responsive: [
           {
-            breakpoint: 1920,
+            breakpoint: 1025,
             settings: {
-              slidesToShow: 2,
-              centerPadding: "20px",
-              slidesToScroll: 1,
-              infinite: true,
+              slidesToShow: 1,
             },
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              centerPadding: "20px",
-              slidesToScroll: 1,
-              infinite: true,
+              centerPadding: "0px",
             },
           },
         ],
