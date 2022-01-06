@@ -1,7 +1,7 @@
 {
     "name": "yoov",
     "version": "0.1.0",
-    "homepage": "/yoov2/",
+    "homepage": "/demo/design/yoov2/",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",

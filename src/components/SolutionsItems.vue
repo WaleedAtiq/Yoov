@@ -55,8 +55,13 @@
       </v-row>
       <div class="category-title">Other products</div>
     </div> -->
-    <div class="category-title">HR Management</div>
-    <VueSlickCarousel arrows="false" dots="false" v-bind="solutionSlider">
+    <div class="category-title hidden-sm-and-up">HR Management</div>
+    <VueSlickCarousel
+      arrows="false"
+      dots="false"
+      v-bind="solutionSlider"
+      class="hidden-sm-and-up"
+    >
       <div v-for="(solItems, i) in categoryOne" :key="i">
         <div class="sols-box mobile">
           <div class="icon-holder">
@@ -67,8 +72,15 @@
       </div>
     </VueSlickCarousel>
 
-    <div class="category-title">Other products &amp; services</div>
-    <VueSlickCarousel arrows="false" dots="false" v-bind="solutionSlider">
+    <div class="category-title hidden-sm-and-up">
+      Other products &amp; services
+    </div>
+    <VueSlickCarousel
+      arrows="false"
+      dots="false"
+      v-bind="solutionSlider"
+      class="hidden-sm-and-up"
+    >
       <div v-for="(solItems, i) in categoryTwo" :key="i">
         <div class="sols-box mobile">
           <div class="icon-holder">
