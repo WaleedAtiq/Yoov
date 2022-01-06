@@ -24,16 +24,10 @@
         >
       </v-row>
     </div>
-    <div class="hidden-sm-and-up">
+    <!-- <div class="hidden-sm-and-up">
       <div class="category-title">HR Management</div>
       <v-row class="sols-box-wrap">
-        <v-col
-          v-for="(solItems, i) in categoryOne"
-          :key="i"
-          lg="4"
-          md="6"
-          sm="12"
-        >
+        <v-col v-for="(solItems, i) in categoryOne" :key="i" sm="12">
           <div class="sols-box">
             <div class="icon-holder">
               <img :src="getImgUrl(solItems.title)" alt="" />
@@ -44,13 +38,7 @@
       </v-row>
       <div class="category-title">Other products &amp; services</div>
       <v-row class="sols-box-wrap">
-        <v-col
-          v-for="(solItems, i) in categoryTwo"
-          :key="i"
-          lg="4"
-          md="6"
-          sm="12"
-        >
+        <v-col v-for="(solItems, i) in categoryTwo" :key="i" sm="12">
           <div class="sols-box">
             <div class="icon-holder">
               <img :src="getImgUrl(solItems.title)" alt="" />
@@ -59,11 +47,47 @@
           </div>
         </v-col>
       </v-row>
-    </div>
+    </div> -->
+    <!-- <div class="hidden-sm-and-up">
+      <div class="category-title">HR Management</div>
+      <v-row class="sols-box-wrap">
+        
+      </v-row>
+      <div class="category-title">Other products</div>
+    </div> -->
+    <div class="category-title">HR Management</div>
+    <VueSlickCarousel arrows="false" dots="false" v-bind="solutionSlider">
+      <div v-for="(solItems, i) in categoryOne" :key="i">
+        <div class="sols-box mobile">
+          <div class="icon-holder">
+            <img :src="getImgUrl(solItems.title)" alt="" />
+          </div>
+          <span>{{ $t("homeSolutions." + solItems.title) }}</span>
+        </div>
+      </div>
+    </VueSlickCarousel>
+
+    <div class="category-title">Other products &amp; services</div>
+    <VueSlickCarousel arrows="false" dots="false" v-bind="solutionSlider">
+      <div v-for="(solItems, i) in categoryTwo" :key="i">
+        <div class="sols-box mobile">
+          <div class="icon-holder">
+            <img :src="getImgUrl(solItems.title)" alt="" />
+          </div>
+          <span>{{ $t("homeSolutions." + solItems.title) }}</span>
+        </div>
+      </div>
+    </VueSlickCarousel>
   </div>
 </template>
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
+  components: {
+    VueSlickCarousel,
+  },
   data: () => ({
     getImgUrl(pet) {
       var images = require.context("../assets/icons", false, /\.svg$/);
@@ -125,6 +149,13 @@ export default {
     ],
     SolutionItemsVisible: 9,
     step: 3,
+    solutionSlider: {
+      centerMode: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // variableWidth: true,
+    },
   }),
   computed: {
     visibleSolutionItems() {
