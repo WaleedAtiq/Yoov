@@ -66,6 +66,14 @@ body {
 .hero-banner .main-img {
     margin-top: 60px;
 }
+.hero-banner .v-responsive__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.hero-banner .main-img img {
+    width: 100%;
+}
 .hero-banner .main-img:before {
     content: "";
     position: absolute;
@@ -91,6 +99,12 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
+}
+.custom.v-carousel {
+    height: auto !important;
+}
+.custom .v-image {
+    height: auto !important;
 }
 .main-btns {
     margin-top: 40px;
@@ -179,6 +193,9 @@ body {
 .all-solutions .slick-slider {
     width: calc(100% + 24px);
 }
+.all-solutions .slick-slide .sub-loop {
+    margin-bottom: 16px;
+}
 .all-solutions .show-more-btn {
     font-weight: 500;
     font-size: 16px;
@@ -191,6 +208,7 @@ body {
     transform: translateX(-50%);
     display: inline-block;
     margin-top: 36px;
+    cursor: pointer;
 }
 .all-solutions .show-more-btn:after {
     content: "";
@@ -484,7 +502,7 @@ body {
 .img-holder img {
     width: 100%;
 }
-.home-component .img-holder:before {
+.solution-tabs .home-component .img-holder:before {
     content: "";
     position: absolute;
     left: 0;
@@ -496,7 +514,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.home-component .img-holder:after {
+.solution-tabs .home-component .img-holder:after {
     content: "";
     position: absolute;
     right: 0;
@@ -878,8 +896,20 @@ body {
     color: #0c586d;
     z-index: 2;
 }
+.no-desktop {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .no-tablet {
+        display: none !important;
+    }
+    .no-desktop {
+        display: inherit;
+    }
     .about .banner,
     .oplatform .banner {
         height: 480px;
@@ -956,12 +986,20 @@ body {
     .solution-tabs .tabs-wrap {
         width: 80%;
     }
+    .try-yoov:before {
+        left: 6%;
+    }
+    .try-yoov:after {
+        right: 6%;
+    }
 }
 @media screen and (max-width: 480px) {
-    /* html,
-    body {
-        overflow-x: hidden;
-    } */
+    .no-mobile {
+        display: none !important;
+    }
+    .no-desktop {
+        display: inherit;
+    }
     .hero-banner {
         padding-top: 100px;
     }
@@ -1226,7 +1264,7 @@ body {
         line-height: 160%;
         padding: 0 24px;
     }
-    .col-sm-12 {
+    .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -1255,5 +1293,51 @@ body {
     }
     .try-yoov.contact-sales {
         padding: 260px 0 60px;
+    }
+    .usp-1 .float-icon.top {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .usp-1 .float-icon.bottom {
+        width: 48px;
+        height: 48px;
+        right: 24px;
+        border-radius: 6px;
+    }
+    .usp-2 .float-icon.top {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        top: 50%;
+        left: 48px;
+    }
+    .usp-2 .float-icon.bottom {
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+        left: 0;
+        bottom: 54%;
+    }
+    .usp-3 .float-icon.bottom {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        bottom: 54%;
+    }
+    .usp-3 .float-icon.top {
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+        top: 54%;
+    }
+    .clients {
+        padding: 60px 0;
+    }
+    .usp-1 .img-holder:after,
+    .usp-2 .img-holder:after,
+    .usp-3 .img-holder:after {
+        width: 118px;
+        height: 118px;
     }
 }

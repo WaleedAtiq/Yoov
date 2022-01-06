@@ -9,68 +9,113 @@ import OpenPlatform from '../views/OpenPlatform'
 import Layout from '../components/layout/index'
 import LayoutTwo from '../components/layoutTwo/index'
 import '../assets/style.css'
-import i18n from '../i18n'
+// import i18n from '../i18n'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: `/${i18n.locale}`
-  },
-  {
-    path: '/:lang',
-    component: {
-      render(c) { return c('router-view') }
-    },
+    name: '',
+    component: Layout,
     children: [
       {
         path: '/',
-        name: '',
-        component: Layout,
-        children: [
-          {
-            path: '/',
-            name: 'Home',
-            component: Home
-          }
-        ]
+        name: 'Home',
+        component: Home
+      }
+    ]
+  },
+  {
+    path: '/',
+    name: '',
+    component: LayoutTwo,
+    children: [
+      {
+        path: 'about',
+        name: 'About',
+        component: About
       },
       {
-        path: '/',
-        name: '',
-        component: LayoutTwo,
-        children: [
-          {
-            path: 'about',
-            name: 'About',
-            component: About
-          },
-          {
-            path: 'openplatform',
-            name: 'OpenPlatform',
-            component: OpenPlatform
-          }
-          ,
-          {
-            path: 'blog',
-            name: 'Blog',
-            component: Blog
-          },
-          {
-            path: 'blogdetail',
-            name: 'BlogDetail',
-            component: BlogDetail
-          },
-          {
-            path: 'privacypolicy',
-            name: 'PrivacyPolicy',
-            component: PrivacyPolicy
-          }
-        ]
+        path: 'openplatform',
+        name: 'OpenPlatform',
+        component: OpenPlatform
+      }
+      ,
+      {
+        path: 'blog',
+        name: 'Blog',
+        component: Blog
+      },
+      {
+        path: 'blogdetail',
+        name: 'BlogDetail',
+        component: BlogDetail
+      },
+      {
+        path: 'privacypolicy',
+        name: 'PrivacyPolicy',
+        component: PrivacyPolicy
       }
     ]
   }
+  // {
+  //   path: '/',
+  //   redirect: `/${i18n.locale}`
+  // },
+  // {
+  //   path: '/:lang',
+  //   component: {
+  //     render(c) { return c('router-view') }
+  //   },
+  //   children: [
+  //     {
+  //       path: '/',
+  //       name: '',
+  //       component: Layout,
+  //       children: [
+  //         {
+  //           path: '/',
+  //           name: 'Home',
+  //           component: Home
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       path: '/',
+  //       name: '',
+  //       component: LayoutTwo,
+  //       children: [
+  //         {
+  //           path: 'about',
+  //           name: 'About',
+  //           component: About
+  //         },
+  //         {
+  //           path: 'openplatform',
+  //           name: 'OpenPlatform',
+  //           component: OpenPlatform
+  //         }
+  //         ,
+  //         {
+  //           path: 'blog',
+  //           name: 'Blog',
+  //           component: Blog
+  //         },
+  //         {
+  //           path: 'blogdetail',
+  //           name: 'BlogDetail',
+  //           component: BlogDetail
+  //         },
+  //         {
+  //           path: 'privacypolicy',
+  //           name: 'PrivacyPolicy',
+  //           component: PrivacyPolicy
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // }
 ]
 
 const router = new VueRouter({

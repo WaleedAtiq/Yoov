@@ -3,7 +3,7 @@
     <div class="hero-banner white--text text-center">
       <div class="container">
         <v-row>
-          <v-col sm="12" class="pa-0">
+          <v-col xs="12" class="pa-0">
             <h1 class="main-heading">{{ $t("home.hero-title") }}</h1>
             <h2 class="">
               {{ $t("home.hero-subtitle-1") }}
@@ -13,7 +13,23 @@
               <v-btn class="transparent-btn">{{ $t("home.hero-cta-2") }}</v-btn>
             </div>
             <div class="position-relative main-img">
-              <v-img src="../assets/images/dashboard.png"></v-img>
+              <v-carousel
+                cycle
+                interval="4000"
+                show-arrows-on-hover
+                hide-delimiters
+                class="custom"
+              >
+                <v-carousel-item>
+                  <img src="../assets/images/main-slider-1.png" alt="" />
+                </v-carousel-item>
+                <v-carousel-item>
+                  <img src="../assets/images/main-slider-2.png" alt="" />
+                </v-carousel-item>
+                <v-carousel-item>
+                  <img src="../assets/images/main-slider-3.png" alt="" />
+                </v-carousel-item>
+              </v-carousel>
             </div>
           </v-col>
         </v-row>

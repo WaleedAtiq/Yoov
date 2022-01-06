@@ -29,10 +29,7 @@
         <v-row>
           <v-col lg="8" class="d-flex align-center">
             <v-toolbar-title class="me-10">
-              <router-link
-                class="text-decoration-none d-flex"
-                :to="`/${$i18n.locale}`"
-              >
+              <router-link class="text-decoration-none d-flex" to="/">
                 <svg
                   width="93"
                   height="26"
@@ -78,35 +75,29 @@
                 </router-link>
               </v-btn>
               <v-btn text>
-                <router-link
-                  class="text-decoration-none"
-                  :to="`/${$i18n.locale}/blog`"
-                >
+                <router-link class="text-decoration-none" to="/blog">
                   {{ $t("nav.blog") }}
                 </router-link>
               </v-btn>
               <v-btn text>
-                <router-link
-                  class="text-decoration-none"
-                  :to="`/${$i18n.locale}/about`"
-                >
+                <router-link class="text-decoration-none" to="/about">
                   {{ $t("nav.about") }}
                 </router-link>
               </v-btn>
             </div>
           </v-col>
-          <v-col lg="4" md="4" class="text-end hide-below-1024">
+          <v-col lg="4" md="4" class="text-end hide-below-768">
             <v-btn text class="hidden-md-and-down">
               <router-link class="text-decoration-none" to="/">
                 {{ $t("nav.contact") }}
               </router-link>
             </v-btn>
-            <v-btn text class="show-md-and-up hidden-sm-and-down">
+            <v-btn text class="">
               <router-link class="text-decoration-none" to="/">
                 {{ $t("nav.login") }}
               </router-link>
             </v-btn>
-            <v-btn color="secondary" class="white--text hidden-sm-and-down">{{
+            <v-btn color="secondary" class="white--text">{{
               $t("nav.signup")
             }}</v-btn>
             <v-app-bar-nav-icon class="hidden-lg-and-up" @click="drawer = true">
@@ -123,37 +114,37 @@
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}`">
+            <router-link to="">
               {{ $t("nav.products") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}`">
+            <router-link to="">
               {{ $t("nav.customer-stories") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}/blog`">
+            <router-link to="/blog">
               {{ $t("nav.blog") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}/about`">
+            <router-link to="/about">
               {{ $t("nav.about") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}`">
+            <router-link to="">
               {{ $t("nav.contact") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}`">
+            <router-link to="">
               {{ $t("nav.login") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link :to="`/${$i18n.locale}`">
+            <router-link to="">
               {{ $t("nav.signup") }}
             </router-link>
           </v-list-item>

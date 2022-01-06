@@ -1,13 +1,14 @@
 <template>
   <div>
-    <div class="hidden-sm-and-down">
+    <div class="no-mobile">
       <v-row class="sols-box-wrap">
         <v-col
           v-for="(solItems, i) in visibleSolutionItems"
           :key="i"
           lg="4"
           md="6"
-          sm="12"
+          sm="6"
+          xs="12"
         >
           <div class="sols-box">
             <div class="icon-holder">
@@ -16,83 +17,65 @@
             <span>{{ $t("homeSolutions." + solItems.title) }}</span>
           </div>
         </v-col>
-        <span
-          class="show-more-btn"
-          @click="SolutionItemsVisible += step"
-          v-if="SolutionItemsVisible < SolutionItems.length"
-          >{{ $t("nav.show more") }}</span
-        >
-      </v-row>
-    </div>
-    <!-- <div class="hidden-sm-and-up">
-      <div class="category-title">HR Management</div>
-      <v-row class="sols-box-wrap">
-        <v-col v-for="(solItems, i) in categoryOne" :key="i" sm="12">
-          <div class="sols-box">
-            <div class="icon-holder">
-              <img :src="getImgUrl(solItems.title)" alt="" />
-            </div>
-            <span>{{ $t("homeSolutions." + solItems.title) }}</span>
-          </div>
+        <v-col sm="12" md="12">
+          <span
+            class="show-more-btn"
+            @click="SolutionItemsVisible += step"
+            v-if="SolutionItemsVisible < SolutionItems.length"
+            >{{ $t("nav.show more") }}</span
+          >
         </v-col>
       </v-row>
-      <div class="category-title">Other products &amp; services</div>
-      <v-row class="sols-box-wrap">
-        <v-col v-for="(solItems, i) in categoryTwo" :key="i" sm="12">
-          <div class="sols-box">
-            <div class="icon-holder">
-              <img :src="getImgUrl(solItems.title)" alt="" />
-            </div>
-            <span>{{ $t("homeSolutions." + solItems.title) }}</span>
-          </div>
-        </v-col>
-      </v-row>
-    </div> -->
-    <!-- <div class="hidden-sm-and-up">
-      <div class="category-title">HR Management</div>
-      <v-row class="sols-box-wrap">
-        
-      </v-row>
-      <div class="category-title">Other products</div>
-    </div> -->
-    <div class="category-title hidden-sm-and-up">HR Management</div>
-    <VueSlickCarousel
-      arrows="false"
-      dots="false"
-      v-bind="solutionSlider"
-      class="hidden-sm-and-up"
-    >
-      <div v-for="(solItems, i) in categoryOne" :key="i">
-        <div v-for="(solItem, index) in solItems" :key="index">
-          <div class="sols-box mobile">
-            <div class="icon-holder">
-              <img :src="getImgUrl(solItem.title)" alt="" />
-            </div>
-            <span>{{ $t("homeSolutions." + solItem.title) }}</span>
-          </div>
-        </div>
-      </div>
-    </VueSlickCarousel>
-    <div class="category-title hidden-sm-and-up">
-      Other products &amp; services
     </div>
-    <VueSlickCarousel
-      arrows="false"
-      dots="false"
-      v-bind="solutionSlider"
-      class="hidden-sm-and-up"
-    >
-      <div v-for="(solItems, i) in categoryTwo" :key="i">
-        <div v-for="(solItem, index) in solItems" :key="index">
-          <div class="sols-box mobile">
-            <div class="icon-holder">
-              <img :src="getImgUrl(solItem.title)" alt="" />
+
+    <div class="no-desktop no-tablet">
+      <div class="category-title hidden-sm-and-up">HR Management</div>
+      <VueSlickCarousel
+        arrows="false"
+        dots="false"
+        v-bind="solutionSlider"
+        class="hidden-sm-and-up"
+      >
+        <div v-for="(solItems, i) in categoryOne" :key="i" class="main-loop">
+          <div
+            v-for="(solItem, index) in solItems"
+            :key="index"
+            class="sub-loop"
+          >
+            <div class="sols-box mobile">
+              <div class="icon-holder">
+                <img :src="getImgUrl(solItem.title)" alt="" />
+              </div>
+              <span>{{ $t("homeSolutions." + solItem.title) }}</span>
             </div>
-            <span>{{ $t("homeSolutions." + solItem.title) }}</span>
           </div>
         </div>
+      </VueSlickCarousel>
+      <div class="category-title hidden-sm-and-up">
+        Other products &amp; services
       </div>
-    </VueSlickCarousel>
+      <VueSlickCarousel
+        arrows="false"
+        dots="false"
+        v-bind="solutionSlider"
+        class="hidden-sm-and-up"
+      >
+        <div v-for="(solItems, i) in categoryTwo" :key="i" class="main-loop">
+          <div
+            v-for="(solItem, index) in solItems"
+            :key="index"
+            class="sub-loop"
+          >
+            <div class="sols-box mobile">
+              <div class="icon-holder">
+                <img :src="getImgUrl(solItem.title)" alt="" />
+              </div>
+              <span>{{ $t("homeSolutions." + solItem.title) }}</span>
+            </div>
+          </div>
+        </div>
+      </VueSlickCarousel>
+    </div>
   </div>
 </template>
 <script>
@@ -166,10 +149,9 @@ export default {
     step: 3,
     solutionSlider: {
       centerMode: true,
-      infinite: true,
+      infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // variableWidth: true,
     },
   }),
   computed: {
