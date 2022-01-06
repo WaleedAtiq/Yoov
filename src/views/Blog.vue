@@ -20,9 +20,10 @@
             lg="4"
             md="6"
             sm="12"
+            class="col-xs-12"
           >
             <!-- <router-link v-bind:to="item.link"> -->
-            <router-link v-bind:to="`/${$i18n.locale}${item.link}`">
+            <router-link v-bind:to="item.link">
               <div class="blog-card">
                 <div class="blog-img">{{ item.blogImg }}</div>
                 <div class="blog-detail pa-6">

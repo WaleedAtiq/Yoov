@@ -144,7 +144,7 @@ body {
     line-height: 160%;
     color: #4e5969;
     padding: 0 8px;
-    margin-top: 40px;
+    margin: 40px 0 12px;
 }
 .sols-box-wrap {
     margin-top: 30px;
@@ -914,9 +914,9 @@ body {
     .oplatform .banner {
         height: 480px;
     }
-    .banner {
+    /* .banner {
         height: 240px !important;
-    }
+    } */
     .container {
         max-width: calc(100% - 24px) !important;
     }
@@ -950,6 +950,18 @@ body {
         margin: 0 auto 24px;
         padding: 0;
     }
+    .about .about-img {
+        height: 480px;
+    }
+    .about .about-img .v-image__image--cover {
+        background-position: top 26% center !important;
+    }
+    .about .banner h1.white--text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 0 64px;
+    }
     .about .grey2 .sub-heading {
         left: 50%;
         transform: translateX(-50%);
@@ -961,6 +973,7 @@ body {
     .about .banner .right {
         right: -160px;
         z-index: 0;
+        top: -18%;
     }
     .timeline .awards {
         width: 100%;
@@ -1010,6 +1023,12 @@ body {
     }
     .about .banner svg {
         width: 60%;
+    }
+    .about .about-img {
+        height: 218px;
+    }
+    .about .about-img .v-image__image--cover {
+        background-position: top 30% center !important;
     }
     .container {
         max-width: calc(100% - 24px) !important;
@@ -1272,7 +1291,7 @@ body {
         padding: 0px 0px !important;
     }
     .all-solutions .slick-list {
-        padding: 0 24px 0 0 !important;
+        padding: 0 16px 0 0 !important;
     }
     .all-solutions .slick-slide {
         width: 100%;
@@ -1339,5 +1358,8 @@ body {
     .usp-3 .img-holder:after {
         width: 118px;
         height: 118px;
+    }
+    .sols-box.mobile {
+        width: 296px !important;
     }
 }

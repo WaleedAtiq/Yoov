@@ -39,7 +39,7 @@
               />
             </svg>
             <h1 class="white--text">
-              Amet minim mollit non deserunt ullamco est sit dolor do amet sint.
+              {{ $t("about.about-hero-title") }}
             </h1>
           </v-col>
         </v-row>
@@ -50,7 +50,7 @@
       <v-container>
         <v-row>
           <v-col lg="6" md="12">
-            <SubHeading heading="About Us" />
+            <SubHeading :heading="$t('about.about-title')" />
             <p class="w-80">
               Since day one, YOOV has been devoting itself in advocating digital
               automated management among Hong Kong businesses. According to
@@ -78,38 +78,54 @@
               max-height="100%"
               max-width="100%"
               src="../assets/images/about.png"
+              class="about-img"
             >
             </v-img>
           </v-col>
         </v-row>
         <v-row class="margin-top">
-          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Mission</h2>
+              <h2>{{ $t("about.about-mission") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-mission-text") }}
               </p>
             </div>
           </v-col>
-          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Vision</h2>
+              <h2>{{ $t("about.about-vision") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-vision-text") }}
               </p>
             </div>
           </v-col>
-          <v-col lg="4" offset-lg="0" md="10" offset-md="1" sm="12">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Value</h2>
+              <h2>{{ $t("about.about-value") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-value-text") }}
               </p>
             </div>
           </v-col>

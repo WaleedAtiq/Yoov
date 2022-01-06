@@ -58,7 +58,14 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col v-for="item in clients" :key="item" lg="3" md="6" sm="12">
+          <v-col
+            v-for="item in clients"
+            :key="item"
+            lg="3"
+            md="6"
+            sm="12"
+            class="col-xs-12"
+          >
             <div>
               <div v-html="item.icons"></div>
               <h3>{{ item.title }}</h3>
@@ -92,7 +99,13 @@
             <div class="tabs">
               <v-container>
                 <v-row>
-                  <v-col lg="10" offset-lg="1" md="12" sm="12">
+                  <v-col
+                    lg="10"
+                    offset-lg="1"
+                    md="12"
+                    sm="12"
+                    class="col-xs-12"
+                  >
                     <v-tabs
                       v-model="tab"
                       background-color="transparent"

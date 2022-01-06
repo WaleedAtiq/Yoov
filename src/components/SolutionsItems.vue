@@ -8,7 +8,7 @@
           lg="4"
           md="6"
           sm="6"
-          xs="12"
+          class="col-xs-12"
         >
           <div class="sols-box">
             <div class="icon-holder">
@@ -17,7 +17,7 @@
             <span>{{ $t("homeSolutions." + solItems.title) }}</span>
           </div>
         </v-col>
-        <v-col sm="12" md="12">
+        <v-col sm="12" md="12" class="col-xs-12">
           <span
             class="show-more-btn"
             @click="SolutionItemsVisible += step"
@@ -29,12 +29,12 @@
     </div>
 
     <div class="no-desktop no-tablet">
-      <div class="category-title hidden-sm-and-up">HR Management</div>
+      <div class="category-title">HR Management</div>
       <VueSlickCarousel
         arrows="false"
         dots="false"
         v-bind="solutionSlider"
-        class="hidden-sm-and-up"
+        class="mobile-sols"
       >
         <div v-for="(solItems, i) in categoryOne" :key="i" class="main-loop">
           <div
@@ -51,14 +51,12 @@
           </div>
         </div>
       </VueSlickCarousel>
-      <div class="category-title hidden-sm-and-up">
-        Other products &amp; services
-      </div>
+      <div class="category-title">Other products &amp; services</div>
       <VueSlickCarousel
         arrows="false"
         dots="false"
         v-bind="solutionSlider"
-        class="hidden-sm-and-up"
+        class="mobile-sols"
       >
         <div v-for="(solItems, i) in categoryTwo" :key="i" class="main-loop">
           <div
@@ -152,6 +150,7 @@ export default {
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
+      centerPadding: "24px",
     },
   }),
   computed: {

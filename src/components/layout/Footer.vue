@@ -61,7 +61,7 @@
           </v-col>
           <v-col lg="6">
             <v-row>
-              <v-col lg="6" sm="12" class="footer-widget-col">
+              <v-col lg="6" sm="12" class="footer-widget-col col-xs-12">
                 <h5>Products &amp; services</h5>
                 <ul>
                   <li><a href="/">YOOV+</a></li>
@@ -73,7 +73,11 @@
                   <li><a href="/">YOOV Insurance</a></li>
                 </ul>
               </v-col>
-              <v-col lg="6" sm="12" class="d-none d-md-block footer-widget-col">
+              <v-col
+                lg="6"
+                sm="12"
+                class="d-none d-md-block footer-widget-col col-xs-12"
+              >
                 <h5>Other services</h5>
                 <ul>
                   <li><a href="/">TalkFood</a></li>

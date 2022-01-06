@@ -2,7 +2,7 @@
   <v-card>
     <v-app-bar class="custom-header-two" height="88">
       <v-container>
-        <v-row class="hidden-md-and-down">
+        <v-row class="no-tablet no-mobile">
           <v-col class="text-end pa-0">
             <v-btn text>
               <router-link class="text-decoration-none fs-12" to="/">
@@ -56,7 +56,7 @@
                 </svg>
               </router-link>
             </v-toolbar-title>
-            <div class="hidden-md-and-down">
+            <div class="no-tablet no-mobile">
               <v-menu offset-y>
                 <template v-slot:activator="{ on, attrs }">
                   <v-btn text v-bind="attrs" v-on="on">{{
@@ -86,18 +86,18 @@
               </v-btn>
             </div>
           </v-col>
-          <v-col lg="4" md="4" class="text-end hide-below-768">
-            <v-btn text class="hidden-md-and-down">
+          <v-col lg="4" md="4" class="text-end">
+            <v-btn text class="no-tablet no-mobile">
               <router-link class="text-decoration-none" to="/">
                 {{ $t("nav.contact") }}
               </router-link>
             </v-btn>
-            <v-btn text class="">
+            <v-btn text class="no-mobile">
               <router-link class="text-decoration-none" to="/">
                 {{ $t("nav.login") }}
               </router-link>
             </v-btn>
-            <v-btn color="secondary" class="white--text">{{
+            <v-btn color="secondary" class="white--text no-mobile">{{
               $t("nav.signup")
             }}</v-btn>
             <v-app-bar-nav-icon class="hidden-lg-and-up" @click="drawer = true">

@@ -2,7 +2,7 @@
   <v-card>
     <v-app-bar class="custom-header" height="88">
       <v-container>
-        <v-row class="hidden-md-and-down">
+        <v-row class="no-tablet no-mobile">
           <v-col class="text-end pa-0">
             <v-btn text>
               <router-link class="text-decoration-none fs-12" to="/">

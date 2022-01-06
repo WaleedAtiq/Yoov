@@ -3,7 +3,7 @@
     <div class="hero-banner white--text text-center">
       <div class="container">
         <v-row>
-          <v-col xs="12" class="pa-0">
+          <v-col class="pa-0 col-xs-12">
             <h1 class="main-heading">{{ $t("home.hero-title") }}</h1>
             <h2 class="">
               {{ $t("home.hero-subtitle-1") }}
