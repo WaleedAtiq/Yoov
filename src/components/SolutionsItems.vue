@@ -1,4 +1,4 @@
- <template>
+<template>
   <div>
     <div class="hidden-sm-and-down">
       <v-row class="sols-box-wrap">
@@ -63,15 +63,16 @@
       class="hidden-sm-and-up"
     >
       <div v-for="(solItems, i) in categoryOne" :key="i">
-        <div class="sols-box mobile">
-          <div class="icon-holder">
-            <img :src="getImgUrl(solItems.title)" alt="" />
+        <div v-for="(solItem, index) in solItems" :key="index">
+          <div class="sols-box mobile">
+            <div class="icon-holder">
+              <img :src="getImgUrl(solItem.title)" alt="" />
+            </div>
+            <span>{{ $t("homeSolutions." + solItem.title) }}</span>
           </div>
-          <span>{{ $t("homeSolutions." + solItems.title) }}</span>
         </div>
       </div>
     </VueSlickCarousel>
-
     <div class="category-title hidden-sm-and-up">
       Other products &amp; services
     </div>
@@ -82,11 +83,13 @@
       class="hidden-sm-and-up"
     >
       <div v-for="(solItems, i) in categoryTwo" :key="i">
-        <div class="sols-box mobile">
-          <div class="icon-holder">
-            <img :src="getImgUrl(solItems.title)" alt="" />
+        <div v-for="(solItem, index) in solItems" :key="index">
+          <div class="sols-box mobile">
+            <div class="icon-holder">
+              <img :src="getImgUrl(solItem.title)" alt="" />
+            </div>
+            <span>{{ $t("homeSolutions." + solItem.title) }}</span>
           </div>
-          <span>{{ $t("homeSolutions." + solItems.title) }}</span>
         </div>
       </div>
     </VueSlickCarousel>
@@ -174,10 +177,32 @@ export default {
       return this.SolutionItems.slice(0, this.SolutionItemsVisible);
     },
     categoryOne() {
-      return this.SolutionItems.filter((prod) => prod.cat == 1);
+      const reducedItems = this.SolutionItems.filter((prod) => prod.cat == 1)
+        .reduce((accumulator, current, index) => {
+          if (index % 2) {
+            accumulator[index - 1].push(current);
+          } else {
+            accumulator[index] = [];
+            accumulator[index].push(current);
+          }
+          return accumulator;
+        }, [])
+        .filter((item) => item);
+      return reducedItems;
     },
     categoryTwo() {
-      return this.SolutionItems.filter((prod) => prod.cat == 2);
+      const reducedItems = this.SolutionItems.filter((prod) => prod.cat == 2)
+        .reduce((accumulator, current, index) => {
+          if (index % 2) {
+            accumulator[index - 1].push(current);
+          } else {
+            accumulator[index] = [];
+            accumulator[index].push(current);
+          }
+          return accumulator;
+        }, [])
+        .filter((item) => item);
+      return reducedItems;
     },
   },
 };
