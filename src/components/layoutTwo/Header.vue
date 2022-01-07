@@ -6,7 +6,7 @@
           <v-col class="text-end pa-0">
             <v-btn text>
               <router-link
-                class="text-decoration-none fs-12"
+                class="text-decoration-none fs-12 login"
                 :to="`/${$i18n.locale}`"
               >
                 {{ $t("nav.login") }}
@@ -14,7 +14,7 @@
             </v-btn>
             <v-menu offset-y>
               <template v-slot:activator="{ on, attrs }">
-                <v-btn text v-bind="attrs" v-on="on">
+                <v-btn text v-bind="attrs" v-on="on" class="lang-top">
                   {{ $i18n.locale.toUpperCase() }}
                 </v-btn>
               </template>
@@ -110,7 +110,7 @@
                 {{ $t("nav.contact") }}
               </router-link>
             </v-btn>
-            <v-btn text class="no-mobile">
+            <v-btn text class="no-desktop no-tablet">
               <router-link
                 class="text-decoration-none"
                 :to="`/${$i18n.locale}`"
@@ -241,6 +241,11 @@ export default {
 }
 .v-list--nav .v-list-item:last-child button {
   border: 1px solid #ebebeb;
+}
+.custom-header-two button.lang-top {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
 }
 @media screen and (max-width: 1024px) {
   .v-navigation-drawer {

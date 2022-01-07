@@ -22,8 +22,7 @@
             sm="12"
             class="col-xs-12"
           >
-            <!-- <router-link v-bind:to="item.link"> -->
-            <router-link v-bind:to="item.link">
+            <router-link v-bind:to="`/${$i18n.locale}/${item.link}`">
               <div class="blog-card">
                 <div class="blog-img">{{ item.blogImg }}</div>
                 <div class="blog-detail pa-6">
@@ -55,91 +54,91 @@ export default {
       pageSize: 6,
       list: [
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 1",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 2",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 3",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 4",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 5",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 6",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 7",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 8",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 9",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 10",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 11",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 12",
           detail:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum nesciunt ducimus ea cum, sint ab officiis illo.",
         },
         {
-          link: "/blogdetail",
+          link: "blogdetail",
           blogImg: "",
           title: "Blog title 13",
           detail:

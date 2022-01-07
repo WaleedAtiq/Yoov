@@ -19,6 +19,7 @@
                 show-arrows-on-hover
                 hide-delimiters
                 class="custom"
+                height="480"
               >
                 <v-carousel-item>
                   <img src="../assets/images/main-slider-1.png" alt="" />

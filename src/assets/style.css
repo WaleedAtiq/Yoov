@@ -127,6 +127,15 @@ body {
     background: transparent !important;
     color: #ffffff !important;
 }
+.fs-12.login {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+}
+.v-window__prev,
+.v-window__next {
+    z-index: 2;
+}
 
 /* All Solutions ---------------------------------- */
 .all-solutions {
