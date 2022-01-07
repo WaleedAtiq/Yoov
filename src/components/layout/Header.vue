@@ -5,7 +5,10 @@
         <v-row class="no-tablet no-mobile">
           <v-col class="text-end pa-0">
             <v-btn text>
-              <router-link class="text-decoration-none fs-12" to="/">
+              <router-link
+                class="text-decoration-none fs-12"
+                :to="`/${$i18n.locale}`"
+              >
                 {{ $t("nav.login") }}
               </router-link>
             </v-btn>
@@ -29,7 +32,10 @@
         <v-row class="mobile-flex">
           <v-col lg="8" class="d-flex align-center">
             <v-toolbar-title class="me-10">
-              <router-link class="text-decoration-none d-flex" to="/">
+              <router-link
+                class="text-decoration-none d-flex"
+                :to="`/${$i18n.locale}`"
+              >
                 <svg
                   width="93"
                   height="26"
@@ -70,17 +76,26 @@
                 </v-list>
               </v-menu>
               <v-btn text>
-                <router-link class="text-decoration-none" to="/">
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}`"
+                >
                   {{ $t("nav.customer-stories") }}
                 </router-link>
               </v-btn>
               <v-btn text>
-                <router-link class="text-decoration-none" to="/blog">
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/blog`"
+                >
                   {{ $t("nav.blog") }}
                 </router-link>
               </v-btn>
               <v-btn text>
-                <router-link class="text-decoration-none" to="/about">
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/about`"
+                >
                   {{ $t("nav.about") }}
                 </router-link>
               </v-btn>
@@ -88,12 +103,18 @@
           </v-col>
           <v-col lg="4" md="4" class="text-end">
             <v-btn text class="no-tablet no-mobile">
-              <router-link class="text-decoration-none" to="/">
+              <router-link
+                class="text-decoration-none"
+                :to="`/${$i18n.locale}`"
+              >
                 {{ $t("nav.contact") }}
               </router-link>
             </v-btn>
             <v-btn text class="no-mobile">
-              <router-link class="text-decoration-none" to="/">
+              <router-link
+                class="text-decoration-none"
+                :to="`/${$i18n.locale}`"
+              >
                 {{ $t("nav.login") }}
               </router-link>
             </v-btn>
@@ -112,37 +133,37 @@
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item class="resp-link">
-            <router-link to="/">
+            <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.products") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/">
+            <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.customer-stories") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/blog">
+            <router-link :to="`/${$i18n.locale}/blog`">
               {{ $t("nav.blog") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/about">
+            <router-link :to="`/${$i18n.locale}/about`">
               {{ $t("nav.about") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/">
+            <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.contact") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/">
+            <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.login") }}
             </router-link>
           </v-list-item>
           <v-list-item class="resp-link">
-            <router-link to="/">
+            <router-link :to="`/${$i18n.locale}`">
               {{ $t("nav.signup") }}
             </router-link>
           </v-list-item>

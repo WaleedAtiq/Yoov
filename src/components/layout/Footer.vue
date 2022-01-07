@@ -40,7 +40,10 @@
             <h5>Company</h5>
             <ul>
               <li>
-                <router-link class="text-decoration-none" to="/about">
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/about`"
+                >
                   {{ $t("nav.about") }}
                 </router-link>
               </li>
@@ -51,7 +54,10 @@
             <h5>Resources</h5>
             <ul>
               <li>
-                <router-link class="text-decoration-none" to="/blog">
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/blog`"
+                >
                   {{ $t("nav.blog") }}
                 </router-link>
               </li>
