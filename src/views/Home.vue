@@ -47,217 +47,6 @@
             </h1>
           </v-col>
         </v-row>
-        <!-- <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M34 3H6V37H34V3ZM8 35V5H32V35H8ZM29 8H11V10H29V8ZM11 13H29V15H11V13ZM18 18H11V20H18V18Z"
-                  fill="#294460"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M22 20H26V27H30V30H18V27H22V20ZM29 31H19V33H29V31Z"
-                  fill="#5EC2D0"
-                />
-              </svg>
-              <span>Workflow approval</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 30C9 26.6863 11.6863 24 15 24H25C28.3137 24 31 26.6863 31 30V36H9V30Z"
-                  fill="#5EC2D0"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8 30C8 26.134 11.134 23 15 23H25C28.866 23 32 26.134 32 30V36H30V30C30 27.2386 27.7614 25 25 25H15C12.2386 25 10 27.2386 10 30V36H8V30Z"
-                  fill="#294460"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20 6C16.6863 6 14 8.68629 14 12C14 15.3137 16.6863 18 20 18C23.3137 18 26 15.3137 26 12C26 8.68629 23.3137 6 20 6ZM12 12C12 7.58172 15.5817 4 20 4C24.4183 4 28 7.58172 28 12C28 16.4183 24.4183 20 20 20C15.5817 20 12 16.4183 12 12Z"
-                  fill="#294460"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M25.7682 27.6402L20.0672 34.4815L16.2928 30.7072L17.7071 29.2929L19.9328 31.5186L24.2317 26.3599L25.7682 27.6402Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span>Attendance management</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="28" y="4" width="8" height="8" fill="#5EC2D0" />
-                <rect x="4" y="26" width="10" height="10" fill="#5EC2D0" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M21.5858 7.00006L19.293 4.70718L20.7072 3.29297L25.4143 8.00008L20.7072 12.7072L19.293 11.293L21.5859 9.00006H10V23.0001H8V7.00006H21.5858ZM20.4142 30.0001L22.707 27.7072L21.2928 26.293L16.5857 31.0001L21.2928 35.7072L22.707 34.293L20.4141 32.0001H33V15.0001H31V30.0001H20.4142Z"
-                  fill="#294460"
-                />
-              </svg>
-
-              <span>Scheduling management</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M31 8H9V15H31V8ZM11 13V10H29V13H11Z" fill="#294460" />
-                <path d="M9 17H15V23H9V17ZM11 19V21H13V19H11Z" fill="#294460" />
-                <path
-                  d="M23 17H17V23H23V17ZM19 21V19H21V21H19Z"
-                  fill="#294460"
-                />
-                <path d="M9 25H15V31H9V25ZM11 27V29H13V27H11Z" fill="#294460" />
-                <path
-                  d="M23 25H17V31H23V25ZM19 29V27H21V29H19Z"
-                  fill="#294460"
-                />
-                <path d="M35 4H5V35H35V4ZM7 33V6H33V33H7Z" fill="#294460" />
-                <path d="M31 17H25V31H31V17Z" fill="#5EC2D0" />
-              </svg>
-              <span>Salary calculation</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M6 9H34V15H6V9Z" fill="#5EC2D0" />
-                <path
-                  d="M10 4H12V8H28V4H30V8H35V33H5V8H10V4ZM33 14V10H7V14H33ZM33 16H7V31H33V16Z"
-                  fill="#294460"
-                />
-                <path d="M30 20H22V28H30V20Z" fill="#5EC2D0" />
-              </svg>
-
-              <span>Leave management</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="6" y="6" width="14" height="14" fill="#5EC2D0" />
-                <path
-                  d="M23 13H35V35H13V23H23V13ZM25 25V33H33V25H25ZM23 33V25H15V33H23ZM33 15H25V23H33V15Z"
-                  fill="#294460"
-                />
-              </svg>
-
-              <span>No-code development</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M11 25H29V27H11V25Z" fill="#294460" />
-                <path d="M18 30H11V32H18V30Z" fill="#294460" />
-                <path d="M6 3H34V37H6V3ZM8 5V35H32V5H8Z" fill="#294460" />
-                <path
-                  d="M18 16C20.2091 16 22 14.2091 22 12C22 9.79086 20.2091 8 18 8C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16Z"
-                  fill="#5EC2D0"
-                />
-                <path
-                  d="M15 18C12.7909 18 11 19.7909 11 22V23H25V22C25 19.7909 23.2091 18 21 18H15Z"
-                  fill="#5EC2D0"
-                />
-              </svg>
-              <span>CRM</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="16" y="6" width="8" height="12" fill="#5EC2D0" />
-                <path d="M22 23H10V25H22V23Z" fill="#294460" />
-                <path d="M10 28H18V30H10V28Z" fill="#294460" />
-                <path d="M22 28H20V30H22V28Z" fill="#294460" />
-                <path d="M35 4H5V35H35V4ZM7 33V6H33V33H7Z" fill="#294460" />
-              </svg>
-              <span>Inventory management</span>
-            </div>
-          </v-col>
-          <v-col lg="4" md="6">
-            <div class="sols-box">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="25" y="11" width="6" height="14" fill="#5EC2D0" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M36 6H4V30H36V6ZM6 28V8H34V28H6ZM35 32H5V34H35V32ZM9 11H15V17H9V11ZM11 13V15H13V13H11ZM15 19H9V25H15V19ZM11 23V21H13V23H11ZM17 11H23V17H17V11ZM19 13V15H21V13H19ZM23 19H17V25H23V19ZM19 23V21H21V23H19Z"
-                  fill="#294460"
-                />
-              </svg>
-
-              <span>Catering POS system</span>
-            </div>
-          </v-col> -->
         <SolutionItemsList />
       </div>
     </div>
@@ -369,19 +158,19 @@
                 <img src="../assets/images/story1.png" class="mb-4" alt="" />
                 <p>
                   Our monthly payroll computation is complicated and a waste of
-                  time. YOOV WORK is beyond our expectations! It can minimize
-                  the administrative workload, reduce time-wasting and human
+                  time. YOOV is beyond our expectations! It minimizes the
+                  administrative workload, reduces time-wasting and human
                   resources utilization!
                 </p>
-                <span>Chief Superintendent of HR Department</span>
+                <span>Chief superintendent of HR department</span>
                 <h5>Ms.Yung</h5>
               </div>
               <div class="story-slider">
                 <img src="../assets/images/story2.png" class="mb-4" alt="" />
                 <p>
-                  It has been great to work with YOOV EAT! It minimizes human
-                  mistakes, speeds up our ordering process, reduces labour and
-                  time costs!
+                  YOOV EAT's QR Code self-ordering feature works perfectly in
+                  minimizing human mistakes, speeds up our ordering process,
+                  reduces labour and time costs!
                 </p>
                 <span>Restaurant owner</span>
                 <h5>Ms.Ng</h5>
@@ -389,12 +178,13 @@
               <div class="story-slider">
                 <img src="../assets/images/story2.png" class="mb-4" alt="" />
                 <p>
-                  It has been great to work with YOOV EAT! It minimizes human
-                  mistakes, speeds up our ordering process, reduces labour and
-                  time costs!
+                  Over 1,000 employee profiles are stored automatically in
+                  YOOV's centralized management system, so data accuracy is
+                  guaranteed. Also, it is useful for us to record all the
+                  essential dates or deadlines.
                 </p>
-                <span>Restaurant owner</span>
-                <h5>Ms.Ng</h5>
+                <span>IWS Group Holdings Limited</span>
+                <h5>HR manager</h5>
               </div>
             </VueSlickCarousel>
           </v-col>
@@ -413,7 +203,7 @@
           v-bind:iconPathTwo="require('../assets/images/Icon-01.png')"
           swapIcons="true"
           heading="Achieve corporate centralized management"
-          detail="Are you working with individual software solutions but difficult in real-time data integration? With YOOV's one shared platform, all data are well-stored and available to each department unit, to leverage the one central database to achieve cross-functional collaboration. Enjoy seamless cooperative office and stay high efficiency with our centralized management style."
+          detail="With YOOV's one shared platform, all data are well-stored and accessible to each user. To leverage a centralized business model to achieve cross-functional collaboration and create a seamless cooperative office."
         />
         <Swap
           class="usp-2"
@@ -423,7 +213,7 @@
           swap="true"
           swapIcons="true"
           heading="Create your custom solution"
-          detail="Highly flexible, build the optimal system framework to fit your business needs. No technical barriers and without coding. Easy to use, you can pick it up quickly. Feel accessible in developing your own solution at anytime with YOOV's building block system."
+          detail="Highly flexible to build the optimal system framework. No technical barriers nor coding is needed. Feel free to develop your solution with YOOV's building block system."
         />
         <Swap
           class="usp-3"
@@ -432,7 +222,7 @@
           v-bind:iconPathTwo="require('../assets/images/Icon-06.png')"
           swapIcons="true"
           heading="Manage with digital business model"
-          detail="Automate daily workflow with cloud technology. To attain all-around digitization from internal or external operations, like HRM or CRM. With YOOV, visualize operation data is available, then you can get a better understanding of corporate scale and clean direction for expansion. Enhancing operational efficiency is easier than ever."
+          detail="Automate daily workflow with all-around digitization, from internal to external operations. Visualize data for a better understanding of your business and improve operational efficiency."
         />
       </div>
     </div>

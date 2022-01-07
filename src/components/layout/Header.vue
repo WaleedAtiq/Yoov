@@ -110,7 +110,7 @@
                 {{ $t("nav.contact") }}
               </router-link>
             </v-btn>
-            <v-btn text class="no-desktop no-tablet">
+            <v-btn text class="mobile-login">
               <router-link
                 class="text-decoration-none"
                 :to="`/${$i18n.locale}`"

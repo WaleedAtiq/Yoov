@@ -23,8 +23,8 @@ export default {
 <style scoped>
 .sub-heading svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -8px;
+  left: -6px;
 }
 
 .sub-heading h2 {

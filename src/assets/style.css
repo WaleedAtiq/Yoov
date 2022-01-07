@@ -711,6 +711,15 @@ body {
 .timeline .container {
     z-index: 1;
 }
+.v-application .headline {
+    font-family: "Prompt", sans-serif !important;
+}
+.v-application .cyan--text {
+    color: #207a8e !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 120%;
+}
 .about .grey2 .w-80 {
     padding-right: 10%;
     font-weight: normal;
@@ -908,6 +917,9 @@ body {
 .no-desktop {
     display: none;
 }
+.mobile-login {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
 }
@@ -918,6 +930,9 @@ body {
     }
     .no-desktop {
         display: inherit;
+    }
+    .mobile-login {
+        display: inline-flex;
     }
     .about .banner,
     .oplatform .banner {
@@ -1021,6 +1036,9 @@ body {
     }
     .no-desktop {
         display: inherit;
+    }
+    .mobile-login {
+        display: none;
     }
     .hero-banner {
         padding-top: 100px;

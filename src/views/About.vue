@@ -136,7 +136,7 @@
       <v-container>
         <v-row>
           <v-col>
-            <SubHeading heading="Our Histroy" />
+            <SubHeading heading="Our history" />
             <TimelineAbout />
           </v-col>
         </v-row>

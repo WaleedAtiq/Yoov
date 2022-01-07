@@ -18,7 +18,7 @@
           class="headline year font-weight-light mb-4"
           v-text="vhead.vhead"
         ></h2>
-        <div v-text="vhead.details"></div>
+        <div v-text="vhead.details" class="details"></div>
         <div class="details more" v-text="vhead.subDetails"></div>
       </div>
     </v-timeline-item>
