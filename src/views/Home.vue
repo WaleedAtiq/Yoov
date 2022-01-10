@@ -22,13 +22,10 @@
                 height="480"
               >
                 <v-carousel-item>
-                  <img src="../assets/images/main-slider-1.png" alt="" />
+                  <img :src="require('../assets/images/hero-crm-' + $i18n.locale + '.png')" />
                 </v-carousel-item>
-                <v-carousel-item>
-                  <img src="../assets/images/main-slider-2.png" alt="" />
-                </v-carousel-item>
-                <v-carousel-item>
-                  <img src="../assets/images/main-slider-3.png" alt="" />
+                <v-carousel-item>]
+                  <img :src="require('../assets/images/hero-inventory-' + $i18n.locale + '.png')" />
                 </v-carousel-item>
               </v-carousel>
             </div>
