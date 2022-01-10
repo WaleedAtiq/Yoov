@@ -4,8 +4,8 @@
       <v-container>
         <v-row class="position-relative">
           <v-col lg="11" md="11">
-            <h1 class="text-h3 font-weight-medium mb-10">Heading</h1>
-            <h5 class="text-h5 mb-4">Sub Heading</h5>
+            <h1 class="text-h3 font-weight-bold mb-10">Heading</h1>
+            <h5 class="text-h5 mb-3 font-weight-bold">Sub Heading</h5>
             <p class="grey--text">
               Physiological respiration involves the mechanisms that ensure that
               the composition of the functional residual capacity is kept
@@ -22,7 +22,7 @@
               followed.
             </p>
             <div class="blog-img my-10"></div>
-            <h5 class="text-h5 mb-3">Sub Heading</h5>
+            <h5 class="text-h5 mb-3 font-weight-bold">Sub Heading</h5>
             <p class="grey--text">
               For athletes, high altitude produces two contradictory effects on
               performance. For explosive events (sprints up to 400 metres, long
@@ -31,7 +31,7 @@
               performance will generally be better at high altitude.
             </p>
             <div class="blog-img my-10"></div>
-            <h5 class="text-h5 mb-3">Sub Heading</h5>
+            <h5 class="text-h5 mb-3 font-weight-bold">Sub Heading</h5>
             <p class="grey--text">
               Physical space is often conceived in three linear dimensions,
               although modern physicists usually consider it, with time, to be
@@ -49,8 +49,6 @@
                   <v-img
                     cover
                     lazy-src="../assets/images/selfservice_en.png"
-                    max-height="100%"
-                    max-width="100%"
                     src="../assets/images/selfservice_en.png"
                   ></v-img>
                 </v-col>

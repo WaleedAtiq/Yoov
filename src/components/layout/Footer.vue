@@ -13,7 +13,7 @@
           </v-col>
         </v-row>
         <v-row class="text-start footer-widget">
-          <v-col lg="3" class="footer-widget-col">
+          <v-col lg="3" sm="6" class="footer-widget-col">
             <h5>Contact us</h5>
             <ul>
               <li>
@@ -36,7 +36,7 @@
               </li>
             </ul>
           </v-col>
-          <v-col lg="3" class="footer-widget-col">
+          <v-col lg="3" sm="6" class="footer-widget-col">
             <h5>Company</h5>
             <ul>
               <li>
@@ -65,52 +65,32 @@
               <li><a href="/">Help center</a></li>
             </ul>
           </v-col>
-          <v-col lg="6">
-            <v-row>
-              <v-col lg="6" sm="12" class="footer-widget-col col-xs-12">
-                <h5>Products &amp; services</h5>
-                <ul>
-                  <li><a href="/">YOOV+</a></li>
-                  <li><a href="/">YOOV WORK</a></li>
-                  <li><a href="/">YOOV EAT</a></li>
-                  <li><a href="/">YOOV Domain</a></li>
-                  <li><a href="/">YOOV Email</a></li>
-                  <li><a href="/">YOOV Capital</a></li>
-                  <li><a href="/">YOOV Insurance</a></li>
-                </ul>
-              </v-col>
-              <v-col
-                lg="6"
-                sm="12"
-                class="d-none d-md-block footer-widget-col col-xs-12"
-              >
-                <h5>Other services</h5>
-                <ul>
-                  <li><a href="/">TalkFood</a></li>
-                  <li><a href="/">BYOBmall</a></li>
-                </ul>
-              </v-col>
-            </v-row>
+          <v-col lg="3" sm="6" class="footer-widget-col">
+            <h5>Products &amp; services</h5>
+            <ul>
+              <li><a href="/">YOOV+</a></li>
+              <li><a href="/">YOOV WORK</a></li>
+              <li><a href="/">YOOV EAT</a></li>
+              <li><a href="/">YOOV Domain</a></li>
+              <li><a href="/">YOOV Email</a></li>
+              <li><a href="/">YOOV Capital</a></li>
+              <li><a href="/">YOOV Insurance</a></li>
+            </ul>
+          </v-col>
+          <v-col lg="3" sm="6" class="footer-widget-col">
+            <h5>Other services</h5>
+            <ul>
+              <li><a href="/">TalkFood</a></li>
+              <li><a href="/">BYOBmall</a></li>
+            </ul>
           </v-col>
         </v-row>
         <div class="footer-bottom">
           <v-row
-            class="
-              py-2
-              white--text
-              text-center
-              justify-space-between
-              align-center
-            "
+            class="py-2 white--text text-center justify-space-between align-center"
           >
             <v-col
-              class="
-                d-flex
-                justify-space-between
-                align-center
-                footer-copyright
-                d-md-flex d-sm-block
-              "
+              class="d-flex justify-space-between align-center footer-copyright d-md-flex d-sm-block"
             >
               <span>
                 ©{{ new Date().getFullYear() }} — YOOV Internet Technology (HK)
@@ -239,5 +219,15 @@ a {
   font-size: 12px;
   line-height: 140%;
   text-transform: inherit;
+}
+
+@media (max-width: 480px) {
+  .footer-widget {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .custom-footer h5 {
+    font-size: 12px;
+  }
 }
 </style>

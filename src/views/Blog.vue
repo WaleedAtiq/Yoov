@@ -51,7 +51,7 @@ export default {
   data() {
     return {
       page: 1,
-      pageSize: 6,
+      pageSize: 12,
       list: [
         {
           link: "blogdetail",
@@ -214,5 +214,21 @@ export default {
   width: 100%;
   height: 193.5px;
   background: #c9cdd4;
+}
+@media (max-width: 425px) {
+  .banner {
+    height: 40vh;
+  }
+  .right {
+    right: -20px;
+    width: 30%;
+    top: 80px;
+  }
+
+  .left {
+    left: -20px;
+    bottom: 80px;
+    width: 30%;
+  }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <v-card>
-    <v-app-bar class="custom-header" height="88">
+    <v-app-bar class="custom-header" height="110">
       <v-container>
         <v-row class="no-tablet no-mobile">
-          <v-col class="text-end pa-0">
+          <v-col class="text-end pa-0 pt-3">
             <v-btn text>
               <router-link
                 class="text-decoration-none fs-12 login"
@@ -214,6 +214,9 @@ export default {
 </script>
 
 <style scoped>
+.v-list--nav .v-list-item:last-child button {
+  border: 1px solid #ebebeb;
+}
 .custom-header .v-btn,
 .custom-header a {
   color: #fff;

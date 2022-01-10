@@ -1,14 +1,7 @@
 <template>
   <main class="about">
     <section
-      class="
-        banner
-        d-flex
-        text-center
-        position-relative
-        overflow-hidden
-        align-center
-      "
+      class="banner d-flex text-center position-relative overflow-hidden align-center"
     >
       <img src="../assets/images/union2.png" class="left" alt="" />
       <v-container>
@@ -90,9 +83,9 @@
             md="10"
             offset-md="1"
             sm="12"
-            class="col-xs-12"
+            class="col-xs-12 d-flex"
           >
-            <div class="card pa-5 text-center">
+            <div class="card pa-5">
               <h2>{{ $t("about.about-mission") }}</h2>
               <p>
                 {{ $t("about.about-mission-text") }}
@@ -105,9 +98,9 @@
             md="10"
             offset-md="1"
             sm="12"
-            class="col-xs-12"
+            class="col-xs-12 d-flex"
           >
-            <div class="card pa-5 text-center">
+            <div class="card pa-5">
               <h2>{{ $t("about.about-vision") }}</h2>
               <p>
                 {{ $t("about.about-vision-text") }}
@@ -120,9 +113,9 @@
             md="10"
             offset-md="1"
             sm="12"
-            class="col-xs-12"
+            class="col-xs-12 d-flex"
           >
-            <div class="card pa-5 text-center">
+            <div class="card pa-5">
               <h2>{{ $t("about.about-value") }}</h2>
               <p>
                 {{ $t("about.about-value-text") }}
@@ -184,7 +177,13 @@
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint.
               </p>
-              <a class="text-decoration-none" href="#">Read our blog</a>
+              <router-link
+                class="text-decoration-none"
+                :to="`/${$i18n.locale}/blog`"
+              >
+                Read our blog
+              </router-link>
+              <!-- <a class="text-decoration-none" href="#">Read our blog</a> -->
             </div>
           </v-col>
           <v-col lg="4">
@@ -221,6 +220,11 @@ export default {
 };
 </script>
 <style scoped>
+.wrap:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
 .card a {
   color: #207a8e;
 }
