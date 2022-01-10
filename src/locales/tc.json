@@ -1,0 +1,53 @@
+{
+    "nav": {
+        "products": "產品",
+        "customer-stories": "客戶案例",
+        "blog": "網誌",
+        "about": "關於我們",
+        "contact": "聯絡我們",
+        "signup": "註冊",
+        "login": "登入",
+        "logout": "登出",
+        "en": "EN",
+        "tc": "繁體",
+        "show more": "顯示更多",
+        "privacy policy": "隱私政策",
+        "terms conditions": "條款和條件"
+    },
+    "home": {
+        "hero-title": "一個平台，帶來無限優勢",
+        "hero-subtitle-1": "帶來人力資源管理的優勢",
+        "hero-subtitle-2": "帶來餐飲 POS 系統的優勢",
+        "hero-subtitle-3": "帶來無代碼系統開發的優勢",
+        "hero-subtitle-4": "帶來客戶管理的優勢",
+        "hero-subtitle-5": "帶來倉存管理的優勢",
+        "hero-cta-1": "預約示範",
+        "hero-cta-2": "聯絡我們"
+    },
+    "homeSolutions": {
+        "solution-head": "一站式數字化解決方案",
+        "Workflow approval": "流程審批",
+        "No-code development": "無代碼開發",
+        "Attendance management": "考勤管理",
+        "Scheduling management": "排班管理",
+        "Salary calculation": "薪酬計算",
+        "Leave management": "假期管理",
+        "Catering POS system": "餐飲 POS 系統",
+        "Business email": "企業電郵",
+        "Corporate domain": "企業網域",
+        "Employee management": "員工管理",
+        "Invoice factoring": "發票融資",
+        "Business insurance": "商業保險"
+    },
+    "about": {
+        "about-hero-title": "為希望管理和營運自動化的企業提供最合適的方案",
+        "about-title": "關於我們",
+        "about-content": "YOOV作為一間發展極為迅速的科技企業，我們超過百人的技術開發團隊經年累月，致力研發一套企業管理應用程式，協助各行各業，不同規模的企業數碼化轉型，與時並進，不斷成長。",
+        "about-vision": "願景",
+        "about-vision-text": "我們認為一間企業要達到運作順暢的極致，只需要一套企業系統，內置不同的應用程式，處理企業不同部門的各種業務。過多複雜和散亂的系統，只會拖跨您的業務增長。所以我們一直盡力開發一套功能全面，簡單易用的企業管理系統，助您以簡單結構，解決複雜問題。",
+        "about-mission": "使命",
+        "about-mission-text": "我們深明身處不同時期的企業有不同的需求。我們希望企業透過使用YOOV充滿彈性的自訂系統，按照發展進行調整，隨著規模的擴展和客戶群的增長，逐步增加系統的應用程度，讓YOOV和您的企業一同成長。",
+        "about-value": "核心價值",
+        "about-value-text": "我們時刻把客戶需求及用戶體驗放在第一位。透過我們的技術團隊不斷優化應用程式，讓您可以更快速掌握和輕鬆應用，緊隨您企業的前進步伐。"
+    }
+}

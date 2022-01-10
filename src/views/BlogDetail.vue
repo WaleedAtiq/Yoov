@@ -2,8 +2,8 @@
   <main>
     <section class="blog-single mt-5">
       <v-container>
-        <v-row class="justify-lg-end justify-md-start position-relative">
-          <v-col lg="8" md="11" sm="10">
+        <v-row class="position-relative">
+          <v-col lg="11" md="11">
             <h1 class="text-h3 font-weight-medium mb-10">Heading</h1>
             <h5 class="text-h5 mb-4">Sub Heading</h5>
             <p class="grey--text">
@@ -64,7 +64,7 @@
               </v-row>
             </div>
           </v-col>
-          <v-col lg="2" md="1" sm="2" class="text-end">
+          <!-- <v-col lg="2" md="1" sm="2" class="text-end">
             <div class="share-icons">
               <ul class="pa-0">
                 <li class="mb-2">
@@ -84,7 +84,7 @@
                 </li>
               </ul>
             </div>
-          </v-col>
+          </v-col> -->
         </v-row>
       </v-container>
     </section>

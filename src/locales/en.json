@@ -1,0 +1,53 @@
+{
+    "nav": {
+        "products": "Products",
+        "customer-stories": "Customer stories",
+        "blog": "Blog",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "signup": "Sign Up",
+        "login": "Log In",
+        "logout": "Log Out",
+        "en": "EN",
+        "tc": "TC",
+        "show more": "Show More",
+        "privacy policy": "Privacy Policy",
+        "terms conditions": "Terms & Conditions"
+    },
+    "home": {
+        "hero-title": "One platform, beyond one value",
+        "hero-subtitle-1": "Optimize your HR management now",
+        "hero-subtitle-2": "Optimize your catering POS system now",
+        "hero-subtitle-3": "Optimize your system development now",
+        "hero-subtitle-4": "Optimize your CRM now",
+        "hero-subtitle-5": "Optimize your inventory management now",
+        "hero-cta-1": "Book a demo",
+        "hero-cta-2": "Contact Us"
+    },
+    "homeSolutions": {
+        "solution-head": "All in-one digital solutions",
+        "Workflow approval": "Workflow approval",
+        "No-code development": "No-code development",
+        "Attendance management": "Attendance management",
+        "Scheduling management": "Scheduling management",
+        "Salary calculation": "Salary calculation",
+        "Leave management": "Leave management",
+        "Catering POS system": "Catering POS system",
+        "Business email": "Business email",
+        "Corporate domain": "Corporate domain",
+        "Employee management": "Employee management",
+        "Invoice factoring": "Invoice factoring",
+        "Business insurance": "Business insurance"
+    },
+    "about": {
+        "about-hero-title": "Providing Fitting Solutions for Businesses Heading to Automation in Management and Operations",
+        "about-title": "About Us",
+        "about-content": "YOOV is an extremely fast-growing technology company. Our 100+ size technology development team has been committed to developing a set of business management applications over the years to assist companies in various industries and scales to achieve digital transformation, keeping pace with the times and growing.",
+        "about-vision": "Vision",
+        "about-vision-text": "We believe that for an enterprise to achieve the ultimate smooth operation, it only needs a set of enterprise systems with different built-in applications to handle various businesses in different departments of the enterprise. Too many complicated and disorganized systems will only drag down your business growth. Therefore, we have been trying our best to develop a comprehensive and easy-to-use enterprise management system to help you solve complex problems with a simple structure.",
+        "about-mission": "Mission",
+        "about-mission-text": "We fully understand that companies in different periods have different needs. We hope that enterprises can make use of  YOOV's flexible customized system to fulfil their needs in different stages. With the expansion of scale and the growth of customer base, the application level of the system will be gradually increased, with YOOV grow together with your business.",
+        "about-value": "Value",
+        "about-value-text": "We always put customer needs and user experience first. Through our technical team, we are constantly optimizing the application program, so that you can master and apply it more quickly and easily, and keep up with the progress of your business."
+    }
+}

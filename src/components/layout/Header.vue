@@ -2,24 +2,40 @@
   <v-card>
     <v-app-bar class="custom-header" height="88">
       <v-container>
-        <v-row class="hidden-sm-and-down">
+        <v-row class="no-tablet no-mobile">
           <v-col class="text-end pa-0">
-            <v-btn text
-              ><router-link class="text-decoration-none fs-12" to="/about"
-                >Log in</router-link
-              ></v-btn
-            >
-            <v-btn text
-              ><router-link class="text-decoration-none fs-12" to="/about"
-                >EN</router-link
-              ></v-btn
-            >
+            <v-btn text>
+              <router-link
+                class="text-decoration-none fs-12 login"
+                :to="`/${$i18n.locale}`"
+              >
+                {{ $t("nav.login") }}
+              </router-link>
+            </v-btn>
+            <v-menu offset-y>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn text v-bind="attrs" v-on="on" class="lang-top">
+                  {{ $i18n.locale.toUpperCase() }}
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click.prevent="setLocale('en')">
+                  <v-list-item-title>{{ $t("nav.en") }}</v-list-item-title>
+                </v-list-item>
+                <v-list-item @click.prevent="setLocale('tc')">
+                  <v-list-item-title>{{ $t("nav.tc") }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row class="mobile-flex">
           <v-col lg="8" class="d-flex align-center">
             <v-toolbar-title class="me-10">
-              <router-link class="text-decoration-none d-flex" to="/">
+              <router-link
+                class="text-decoration-none d-flex"
+                :to="`/${$i18n.locale}`"
+              >
                 <svg
                   width="93"
                   height="26"
@@ -46,10 +62,12 @@
                 </svg>
               </router-link>
             </v-toolbar-title>
-            <div class="hidden-sm-and-down">
+            <div class="no-tablet no-mobile">
               <v-menu offset-y>
                 <template v-slot:activator="{ on, attrs }">
-                  <v-btn text v-bind="attrs" v-on="on"> Products </v-btn>
+                  <v-btn text v-bind="attrs" v-on="on">
+                    {{ $t("nav.products") }}
+                  </v-btn>
                 </template>
                 <v-list>
                   <v-list-item v-for="(item, index) in items" :key="index">
@@ -58,38 +76,51 @@
                 </v-list>
               </v-menu>
               <v-btn text>
-                <router-link class="text-decoration-none" to="/"
-                  >Customer stories</router-link
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}`"
                 >
+                  {{ $t("nav.customer-stories") }}
+                </router-link>
               </v-btn>
               <v-btn text>
-                <router-link class="text-decoration-none" to="/blog"
-                  >Blog</router-link
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/blog`"
                 >
+                  {{ $t("nav.blog") }}
+                </router-link>
               </v-btn>
-              <v-btn text
-                ><router-link class="text-decoration-none" to="/about"
-                  >About us</router-link
-                ></v-btn
-              >
+              <v-btn text>
+                <router-link
+                  class="text-decoration-none"
+                  :to="`/${$i18n.locale}/about`"
+                >
+                  {{ $t("nav.about") }}
+                </router-link>
+              </v-btn>
             </div>
           </v-col>
-          <v-col lg="4" md="4" class="text-end hide-below-480">
-            <v-btn text class="hidden-sm-and-down"
-              ><router-link class="text-decoration-none" to="/"
-                >Contact us</router-link
-              ></v-btn
-            >
-            <v-btn text class="hidden-md-and-up"
-              ><router-link class="text-decoration-none" to="/"
-                >Login</router-link
-              ></v-btn
-            >
-            <v-btn class="black--text">Sign up</v-btn>
-            <v-app-bar-nav-icon
-              class="hidden-md-and-up"
-              @click="drawer = true"
-            ></v-app-bar-nav-icon>
+          <v-col lg="4" md="4" class="text-end">
+            <v-btn text class="no-tablet no-mobile">
+              <router-link
+                class="text-decoration-none"
+                :to="`/${$i18n.locale}`"
+              >
+                {{ $t("nav.contact") }}
+              </router-link>
+            </v-btn>
+            <v-btn text class="mobile-login">
+              <router-link
+                class="text-decoration-none"
+                :to="`/${$i18n.locale}`"
+              >
+                {{ $t("nav.login") }}
+              </router-link>
+            </v-btn>
+            <v-btn class="black--text no-mobile">{{ $t("nav.signup") }}</v-btn>
+            <v-app-bar-nav-icon class="hidden-lg-and-up" @click="drawer = true">
+            </v-app-bar-nav-icon>
           </v-col>
         </v-row>
       </v-container>
@@ -101,18 +132,57 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}`">
+              {{ $t("nav.products") }}
+            </router-link>
           </v-list-item>
-
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}`">
+              {{ $t("nav.customer-stories") }}
+            </router-link>
+          </v-list-item>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}/blog`">
+              {{ $t("nav.blog") }}
+            </router-link>
+          </v-list-item>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}/about`">
+              {{ $t("nav.about") }}
+            </router-link>
+          </v-list-item>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}`">
+              {{ $t("nav.contact") }}
+            </router-link>
+          </v-list-item>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}`">
+              {{ $t("nav.login") }}
+            </router-link>
+          </v-list-item>
+          <v-list-item class="resp-link">
+            <router-link :to="`/${$i18n.locale}`">
+              {{ $t("nav.signup") }}
+            </router-link>
+          </v-list-item>
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
+            <v-menu offset-y>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn text v-bind="attrs" v-on="on">
+                  {{ $i18n.locale.toUpperCase() }}
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item @click.prevent="setLocale('en')">
+                  <v-list-item-title>EN</v-list-item-title>
+                </v-list-item>
+                <v-list-item @click.prevent="setLocale('tc')">
+                  <v-list-item-title>TC</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -123,14 +193,23 @@
 export default {
   data: () => ({
     items: [
-      { title: "Click Me" },
-      { title: "Click Me" },
-      { title: "Click Me" },
+      { title: "Click Me 1" },
       { title: "Click Me 2" },
+      { title: "Click Me 3" },
+      { title: "Click Me 4" },
     ],
+    // langs: ["en", "tc"],
     drawer: false,
     group: null,
   }),
+  methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+      this.$router.push({
+        params: { lang: locale },
+      });
+    },
+  },
 };
 </script>
 
@@ -142,5 +221,42 @@ export default {
 .custom-header {
   position: absolute;
   width: 100%;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.custom-header button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: inherit;
+}
+.custom-header select {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.custom-header select option {
+  color: #333333;
+}
+.v-navigation-drawer {
+  z-index: 9;
+}
+.custom-header button.lang-top {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+}
+@media screen and (max-width: 1024px) {
+  .v-navigation-drawer {
+    width: 50vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-navigation-drawer {
+    width: 75vw !important;
+  }
 }
 </style>

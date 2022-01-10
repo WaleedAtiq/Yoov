@@ -23,8 +23,8 @@
               </p>
 
               <ol class="grey--text">
-                <li>
-                  Collection of information
+                <li class="space">
+                  <b>Collection of information</b>
                   <ul class="point-child">
                     <li>
                       1.1 For the purposes outlined in Clause 2, we may collect
@@ -88,8 +88,8 @@
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Uses made of the information
+                <li class="space">
+                  <b>Uses made of the information</b>
                   <ul class="point-child">
                     <li>
                       2.1 We use information held about you for the following
@@ -163,8 +163,8 @@
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Disclosure of your information
+                <li class="space">
+                  <b>Disclosure of your information</b>
                   <h6 class="text-subtitle-1">
                     We will keep your personal data we hold confidential but you
                     agree we may provide information to:
@@ -226,5 +226,26 @@ ul {
 }
 .roman-child li {
   list-style: lower-roman;
+}
+.grey--text li.space {
+  margin-top: 24px;
+}
+.grey--text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #272e3b !important;
+}
+.v-application .text-h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #272e3b;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .v-application .pa-14 {
+    padding: 24px !important;
+  }
 }
 </style>

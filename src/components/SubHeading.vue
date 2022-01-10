@@ -23,12 +23,13 @@ export default {
 <style scoped>
 .sub-heading svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -8px;
+  left: -6px;
 }
 
 .sub-heading h2 {
   position: relative;
   font-size: 32px;
+  margin-bottom: 24px;
 }
 </style>

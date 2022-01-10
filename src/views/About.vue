@@ -1,7 +1,14 @@
 <template>
   <main class="about">
     <section
-      class="banner d-flex text-center position-relative overflow-hidden align-center"
+      class="
+        banner
+        d-flex
+        text-center
+        position-relative
+        overflow-hidden
+        align-center
+      "
     >
       <img src="../assets/images/union2.png" class="left" alt="" />
       <v-container>
@@ -32,7 +39,7 @@
               />
             </svg>
             <h1 class="white--text">
-              Amet minim mollit non deserunt ullamco est sit dolor do amet sint.
+              {{ $t("about.about-hero-title") }}
             </h1>
           </v-col>
         </v-row>
@@ -42,9 +49,9 @@
     <section class="grey2 pa-16">
       <v-container>
         <v-row>
-          <v-col lg="6">
-            <SubHeading heading="About" />
-            <p>
+          <v-col lg="6" md="12">
+            <SubHeading :heading="$t('about.about-title')" />
+            <p class="w-80">
               Since day one, YOOV has been devoting itself in advocating digital
               automated management among Hong Kong businesses. According to
               studies, digitalized companies grow 13% more than those without
@@ -56,7 +63,7 @@
               businesses in automating daily management and operations in return
               for savings in human resources and time.
             </p>
-            <p>
+            <p class="w-80">
               The ongoing pandemic has devastated many businesses. YOOV helps
               businesses not only by offering an automated management system
               that saves cost, but also by facilitating online marketing. Our
@@ -71,38 +78,54 @@
               max-height="100%"
               max-width="100%"
               src="../assets/images/about.png"
+              class="about-img"
             >
             </v-img>
           </v-col>
         </v-row>
-        <v-row>
-          <v-col lg="4">
+        <v-row class="margin-top">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Mission</h2>
+              <h2>{{ $t("about.about-mission") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-mission-text") }}
               </p>
             </div>
           </v-col>
-          <v-col lg="4">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Vision</h2>
+              <h2>{{ $t("about.about-vision") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-vision-text") }}
               </p>
             </div>
           </v-col>
-          <v-col lg="4">
+          <v-col
+            lg="4"
+            offset-lg="0"
+            md="10"
+            offset-md="1"
+            sm="12"
+            class="col-xs-12"
+          >
             <div class="card pa-5 text-center">
-              <h2>Value</h2>
+              <h2>{{ $t("about.about-value") }}</h2>
               <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                {{ $t("about.about-value-text") }}
               </p>
             </div>
           </v-col>
@@ -113,36 +136,42 @@
       <v-container>
         <v-row>
           <v-col>
-            <v-timeline>
-              <v-timeline-item
-                v-for="(year, i) in years"
-                :key="i"
-                :color="year.color"
-                small
-              >
-                <template v-slot:opposite>
-                  <span
-                    :class="`headline font-weight-bold ${year.color}--text`"
-                    v-text="year.year"
-                  ></span>
-                </template>
-                <div class="py-4">
-                  <h2
-                    :class="`headline font-weight-light mb-4 ${year.color}--text`"
-                  >
-                    Lorem ipsum
-                  </h2>
-                  <div>
-                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
-                    scaevola imperdiet nec ut, sed euismod convenire principes
-                    at. Est et nobis iisque percipit, an vim zril disputando
-                    voluptatibus, vix an salutandi sententiae.
-                  </div>
-                </div>
-              </v-timeline-item>
-            </v-timeline>
+            <SubHeading heading="Our history" />
+            <TimelineAbout />
           </v-col>
         </v-row>
+        <div class="position-relative d-inline-block sub-heading">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M24 0C24 13.2548 13.2548 24 0 24V0L24 0Z" fill="#5EC2D0" />
+          </svg>
+          <h2>Awards</h2>
+        </div>
+        <div class="awards">
+          <div class="wrap">
+            <div class="img">
+              <img src="../assets/images/award-01.png" alt="" />
+            </div>
+            <div class="text">Capital Outstanding eCommerce Awards 2020/21</div>
+          </div>
+          <div class="wrap">
+            <div class="img">
+              <img src="../assets/images/award-02.png" alt="" />
+            </div>
+            <div class="text">Happy Company 2021</div>
+          </div>
+          <div class="wrap">
+            <div class="img">
+              <img src="../assets/images/award-03.png" alt="" />
+            </div>
+            <div class="text">Capital Outstanding eCommerce Awards 2020/21</div>
+          </div>
+        </div>
       </v-container>
     </section>
     <section class="grey2 pa-16">
@@ -186,36 +215,9 @@
 
 <script>
 import SubHeading from "../components/SubHeading.vue";
+import TimelineAbout from "../components/TimelineAbout.vue";
 export default {
-  components: { SubHeading },
-  data: () => ({
-    years: [
-      {
-        color: "cyan",
-        year: "2021",
-      },
-      {
-        color: "cyan",
-        year: "2020",
-      },
-      {
-        color: "cyan",
-        year: "2019",
-      },
-      {
-        color: "cyan",
-        year: "2018",
-      },
-      {
-        color: "cyan",
-        year: "2017",
-      },
-      {
-        color: "cyan",
-        year: "2016",
-      },
-    ],
-  }),
+  components: { SubHeading, TimelineAbout },
 };
 </script>
 <style scoped>
@@ -229,18 +231,30 @@ export default {
 .right {
   position: absolute;
   right: 0;
-  top: 80px;
+  top: 0;
 }
-
 .left {
   position: absolute;
-  left: 0;
-  top: 80px;
+  left: 48px;
+  top: 48px;
+  z-index: 0;
 }
-
 .card {
   background: #ffffff;
   border-radius: 8px;
   border-top: 6px solid #5ec2d0;
+}
+.card p {
+  font-size: 14px;
+}
+.sub-heading svg {
+  position: absolute;
+  top: -8px;
+  left: -6px;
+}
+.sub-heading h2 {
+  position: relative;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 </style>

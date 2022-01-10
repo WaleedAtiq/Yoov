@@ -2,7 +2,7 @@
   <div class="contact-component">
     <v-container>
       <v-row>
-        <v-col cols="24" class="text-center ma-10 pa-10 position-relative">
+        <v-col cols="24" class="text-center ma-10 pa-10 position-relative mobile-padding">
           <img
             src="../assets/images/element1.png"
             class="position-absolute left-element"
