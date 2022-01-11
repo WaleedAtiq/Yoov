@@ -107,6 +107,9 @@ body {
     height: auto !important;
     z-index: 1;
 }
+.hero-banner .v-responsive__content {
+    height: 37.153vw;
+}
 .custom .v-image {
     height: auto !important;
 }
